@@ -3,16 +3,15 @@
 import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
-import { useRouter, usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 
 const Navbar = () => {
 
-    const router = useRouter();
     const pathName = usePathname();
 
   return (
-    <header className='w-full px-40 py-12 font-medium text-lg flex items-center justify-between'>
+    <header className='w-full px-[200px] pt-3 pb-3 font-medium text-lg flex items-center justify-between bg-slate-50'>
         <Logo />
         <nav>
             <Link href='/' className={`mx-6 hover:text-purple-700 ${pathName === '/' ? 'text-purple-700' : ''}`}>Home</Link>
