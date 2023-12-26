@@ -16,6 +16,10 @@ const config: Config = {
 
       colors: {
         light: '#f5f5f5'
+      },
+
+      animation: {
+        'spin-slow': 'spin 8s linear infinite',
       }
       
     },

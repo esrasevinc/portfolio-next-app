@@ -3,13 +3,14 @@ import profilePic from '../public/images/profile-pic.png'
 //import resume from '../public/dummy.pdf'
 import Link from 'next/link'
 import { BsBoxArrowUpRight } from "react-icons/bs"
+import HireMe from './components/HireMe'
 
 export default function Home() {
 
   return (
     <>
-      <main className='flex items-center w-full min-h-screen text-slate-900'>
-        <div className='flex items-center w-full justify-between mx-60'>
+      <main className='flex items-center w-full h-[84vh] text-slate-900'>
+        <div className='flex items-center w-full  justify-between mx-60 '>
         <div className='w-1/2'>
             <h1 className='text-6xl font-bold items-center '>
               Hi there, I'm Esra! 
@@ -35,12 +36,10 @@ export default function Home() {
 
         </div>
         <div className='w-1/2'>
-            <Image src={profilePic} alt='Profile Picture' className='w-3/4 h-auto ml-40 p-0'/>
+            <Image src={profilePic} alt='Profile Picture' className='w-[100%] h-auto'/>
         </div>
-
-
-          
         </div>
+        <HireMe />
       </main>
     </>
   )
