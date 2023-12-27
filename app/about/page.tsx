@@ -44,7 +44,7 @@ const About = () => {
         <Link 
               href='mailto:esrasevinc@hotmail.com' 
               target={'_blank'}
-              className='items-centermt-24 px-6 py-3 bg-purple-950 text-light hover:bg-purple-800 hover:text-light rounded-xl text-lg font-semibold border'
+              className='items-center px-6 py-3 bg-purple-950 text-light hover:bg-purple-800 hover:text-light rounded-xl text-lg font-semibold border'
               >
                 Contact Me
         </Link>
