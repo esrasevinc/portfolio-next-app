@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const HireMe = () => {
   return (
-    <div className='fixed left-4 bottom-4 flex items-center justify-center overflow-hidden'>
+    <div className='fixed left-8 bottom-4 flex items-center justify-center overflow-hidden'>
       <div className='w-56 h-auto flex items-center justify-center relative'>
             <Image 
             src={jrSoftwareEngineer} 
