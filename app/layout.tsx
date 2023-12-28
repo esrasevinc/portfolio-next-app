@@ -4,6 +4,7 @@ import './globals.css'
 import React from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Script from 'next/script'
 
 const montserrat = Montserrat({
   subsets: ['latin'], 
@@ -23,6 +24,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className} font-mont bg-light dark:bg-dark w-full min-h-screen`} >
+        <Script id='theme-switcher' strategy='beforeInteractive'>
+          {`
+          if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+          } else {
+            document.documentElement.classList.remove('dark')
+          }
+          `}
+        </Script>
         <Navbar />
         {children}
         <Footer />
