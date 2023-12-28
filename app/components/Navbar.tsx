@@ -22,6 +22,10 @@ const Navbar = () => {
       setIsOpen(!isOpen)
     }
 
+    const handleSwitchMode = () => {
+      setMode(mode === 'light' ? 'dark' : 'light')
+    }
+
   return (
 
     <header className='w-full px-[200px] h-[10vh] pt-3 pb-3 font-medium text-lg flex items-center justify-between bg-gray-50 dark:bg-dark'>
@@ -45,7 +49,7 @@ const Navbar = () => {
             <Link href='/contact' className={`${normalClass} ${pathName === '/contact' ? selectedClass : ''}`}>Contact Me</Link>
           </ul>
           <button
-            onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+            onClick={handleSwitchMode}
             className='ml-4 p-1 rounded-full'>
             {mode === 'dark' ?  <MdOutlineLightMode className='w-10 h-10 font-bold text-light' /> : <MdDarkMode className='w-10 h-10 text-dark' /> }
             </button>
