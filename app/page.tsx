@@ -31,9 +31,9 @@ export default function Home() {
               <br />
               I'm a <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>software engineer.</span>
             </motion.h1>
-            <p className='text-lg font-medium mt-4'>
+            <motion.p className='text-lg font-medium mt-4' initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:'spring'}}>
                 I am a junior software engineer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non nostrum minima ipsam quasi, aspernatur repellendus rem voluptatum, sapiente aliquam tempore? Alias quasi earum minima mollitia modi aliquid, expedita inventore.
-            </p>
+            </motion.p>
             <div className='flex items-center'>
               <Link 
               href='/' 

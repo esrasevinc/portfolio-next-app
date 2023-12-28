@@ -74,11 +74,8 @@ const EducationCard = () => {
             description= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vitae, sit repudiandae dignissimos assumenda.'
             />
           </ul>
-
         </div>
-      
       </div>
-      
     </div>
   )
 }
