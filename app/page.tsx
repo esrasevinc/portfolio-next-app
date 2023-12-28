@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <>
-        <div className='flex items-center w-full justify-between px-80 h-[80vh] text-slate-900'>
+        <div className='flex items-center w-full justify-between px-80 h-[80vh] text-slate-900 dark:text-light'>
         <div className='w-1/2'>
             <motion.h1 className='text-6xl font-bold items-center' variants={quote} initial="initial" animate="animate">
               Hi there, I'm Esra! 
@@ -38,13 +38,13 @@ export default function Home() {
               <Link 
               href='/' 
               target={'_blank'}
-              className='flex items-center mt-6 bg-purple-950 text-light hover:bg-purple-800 hover:text-light rounded-xl text-lg font-semibold border p-3 px-6'
+              className='flex items-center mt-6 border bg-purple-950 text-light hover:bg-purple-800 hover:text-light dark:bg-light dark:text-purple-900 rounded-xl text-lg font-semibold  p-3 px-6'
               >Resume <BsBoxArrowUpRight className={'w-6 ml-1 font-extrabold'}/>
               </Link>
               <Link 
               href='mailto:esrasevinc@hotmail.com' 
               target={'_blank'}
-              className='mt-4 bg-light text-purple-950 text-lg font-semibold ml-6 underline underline-offset-4'
+              className='mt-4 bg-light text-purple-950 dark:bg-dark dark:text-light text-lg font-semibold ml-6 underline underline-offset-4'
               >Contact Me</Link>
             </div>
         </div>

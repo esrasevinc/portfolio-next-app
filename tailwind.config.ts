@@ -8,6 +8,7 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -15,7 +16,8 @@ const config: Config = {
       },
 
       colors: {
-        light: '#f5f5f5'
+        light: '#f5f5f5',
+        dark: '#121212'
       },
 
       animation: {
