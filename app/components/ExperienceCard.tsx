@@ -2,6 +2,8 @@
 
 import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
+import experiencePic from '../../public/images/experience-pic.png'
+import Image from 'next/image';
 
 type DetailsProp = {
   position: string,
@@ -14,10 +16,10 @@ type DetailsProp = {
 
 const Details = ( props : DetailsProp ) => {
   return <li className='flex flex-col first:mt-0 last:mb-0 w-[75%] items-center justify-between py-12'>
-    <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:'spring'}}>
+    <motion.div className='mt-1' initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:'spring'}}>
       <h3 className='capitalize font-bold text-2xl'>{props.position}&nbsp;<a href={props.companyLink} target='_blank' className='text-purple-800 capitalize'>@{props.company}</a></h3>
-      <span className='capitalize font-medium text-gray-700'> {props.time} | {props.address} </span>
-      <p className='font-medium w-full'> {props.work} </p>
+      <span className='capitalize font-medium text-gray-700 mt-1'> {props.time} | {props.address} </span>
+      <p className='font-medium w-full mt-1'> {props.work} </p>
     </motion.div>
   </li>
 }
@@ -44,9 +46,15 @@ const ExperienceCard = () => {
            My <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>Experiences</span>
       </motion.h1>
       </div>
+      <div className='flex items-center justify-center w-full'>
+      <div className='w-1/2'>
+        <Image 
+        src={experiencePic}
+        alt='Experience Pic'
+        className='w-[80%] h-auto'/>
+      </div>
 
-      <div className='pt-12 w-[75%] relative'>
-        <div className='absolute left-8 top-12 w-[4px] h-auto bg-purple-950'></div>
+      <div className='pt-12 w-1/2 relative'>
           <ul className='w-full flex flex-col items-center justify-between pb-12'>
             <Details 
             position='Software Engineer'
@@ -84,6 +92,9 @@ const ExperienceCard = () => {
           </ul>
 
       </div>
+      
+      </div>
+      
     </div>
   )
 }
