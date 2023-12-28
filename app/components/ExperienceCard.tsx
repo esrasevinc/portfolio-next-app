@@ -15,7 +15,7 @@ type DetailsProp = {
 }
 
 const Details = ( props : DetailsProp ) => {
-  return <li className='flex flex-col first:mt-0 last:mb-0 w-[75%] items-center justify-between py-12'>
+  return <li className='flex flex-col first:mt-0 last:mb-0 w-[75%] items-start justify-between py-12'>
     <motion.div className='mt-1' initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:'spring'}}>
       <h3 className='capitalize font-bold text-2xl'>{props.position}&nbsp;<a href={props.companyLink} target='_blank' className='text-purple-800 capitalize'>@{props.company}</a></h3>
       <span className='capitalize font-medium text-gray-700 mt-1'> {props.time} | {props.address} </span>
@@ -54,7 +54,7 @@ const ExperienceCard = () => {
         className='w-[80%] h-auto'/>
       </div>
 
-      <div className='pt-12 w-1/2 relative'>
+      <div className='pt-12 w-1/2'>
           <ul className='w-full flex flex-col items-center justify-between pb-12'>
             <Details 
             position='Software Engineer'
@@ -91,7 +91,7 @@ const ExperienceCard = () => {
             
           </ul>
 
-      </div>
+        </div>
       
       </div>
       
