@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from './Logo'
 import { usePathname } from 'next/navigation'
 import useThemeSwitcher from './hooks/useThemeSwitcher';
@@ -13,14 +13,27 @@ const Navbar = () => {
 
     const pathName = usePathname();
     const [ mode, setMode ] = useThemeSwitcher(); 
+    const [ isOpen, setIsOpen ] = useState(false)
 
     const normalClass = 'mx-6 hover:text-purple-700 hover:underline hover:underline-offset-4 dark:hover:underline dark:hover:underline-offset-4 dark:text-light dark:hover:text-slate-50'
     const selectedClass = 'text-purple-700 dark:text-light underline underline-offset-4 dark:underline dark:underline-offset-4'
 
+    const handleClick = () => {
+      setIsOpen(!isOpen)
+    }
+
   return (
 
     <header className='w-full px-[200px] h-[10vh] pt-3 pb-3 font-medium text-lg flex items-center justify-between bg-gray-50 dark:bg-dark'>
+
+        <button className='justify-center items-center hidden lg:flex' onClick={handleClick}>
+          <MdOutlineLightMode />
+        </button>
+
         <Logo />
+
+        <div className='lg:hidden'>
+
         <nav>
           <div className='flex items-center'>
           <ul>
@@ -38,6 +51,7 @@ const Navbar = () => {
             </button>
             </div>
         </nav>
+        </div>
         
     </header>
   )

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 
 const useThemeSwitcher = ()  => {
 
-  const preferDark = "(prefer-color-scheme: dark)"
+  const preferDark = "(prefers-color-scheme: dark)"
   const [ mode, setMode ] = useState("")
 
   useEffect(() => {
