@@ -10,6 +10,17 @@ import AboutMeCard from '../components/AboutMeCard';
 import Skills from '../components/Skills';
 import { title } from 'process';
 import { FaReact } from "react-icons/fa";
+import { SiDotnet } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
+import { SiPython } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { SiCsharp } from "react-icons/si";
+import { SiMicrosoftsqlserver } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+import { SiScikitlearn } from "react-icons/si";
 
 const About = () => {
 
@@ -64,48 +75,48 @@ const About = () => {
             title='React'
             />
             <Skills 
-            icon={<FaReact className='w-16 h-16 dark:text-light' />}
-            title='React'
+            icon={<SiDotnet className='w-16 h-16 dark:text-light' />}
+            title='Microsoft .Net'
             />
             <Skills 
-            icon={<FaReact className='w-16 h-16 dark:text-light' />}
-            title='React'
+            icon={<SiNextdotjs className='w-16 h-16 dark:text-light' />}
+            title='Next.js'
             />
             <Skills 
-            icon={<FaReact className='w-16 h-16 dark:text-light' />}
-            title='React'
+            icon={<SiPython className='w-16 h-16 dark:text-light' />}
+            title='Python'
             />
             <Skills 
-            icon={<FaReact className='w-16 h-16 dark:text-light' />}
-            title='React'
+            icon={<SiJavascript className='w-16 h-16 dark:text-light' />}
+            title='JavaScript'
             />
             <Skills 
-            icon={<FaReact className='w-16 h-16 dark:text-light' />}
-            title='React'
+            icon={<SiTypescript className='w-16 h-16 dark:text-light' />}
+            title='TypeScript'
             />
             <Skills 
-            icon={<FaReact className='w-16 h-16 dark:text-light'/>}
-            title='React'
+            icon={<FaHtml5 className='w-16 h-16 dark:text-light'/>}
+            title='HTML'
             />
             <Skills 
-            icon={<FaReact className='w-16 h-16 dark:text-light' />}
-            title='React'
+            icon={<SiTailwindcss className='w-16 h-16 dark:text-light' />}
+            title='Tailwind CSS'
             />
             <Skills 
-            icon={<FaReact className='w-16 h-16 dark:text-light' />}
-            title='React'
+            icon={<SiCsharp className='w-16 h-16 dark:text-light' />}
+            title='C#'
             />
             <Skills 
-            icon={<FaReact className='w-16 h-16 dark:text-light'/>}
-            title='React'
+            icon={<SiMicrosoftsqlserver className='w-16 h-16 dark:text-light'/>}
+            title='MSSQL'
             />
             <Skills 
-            icon={<FaReact className='w-16 h-16 dark:text-light' />}
-            title='React'
+            icon={<TbBrandReactNative className='w-16 h-16 dark:text-light' />}
+            title='React Native'
             />
             <Skills 
-            icon={<FaReact className='w-16 h-16 dark:text-light'/>}
-            title='React'
+            icon={<SiScikitlearn className='w-16 h-16 dark:text-light'/>}
+            title='Machine Learning'
             />
 
         </div>
