@@ -23,6 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
+      </head>
       <body className={`${montserrat.className} font-mont bg-light dark:bg-dark w-full min-h-screen`} >
         <Script id='theme-switcher' strategy='beforeInteractive'>
           {`
