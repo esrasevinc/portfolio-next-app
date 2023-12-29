@@ -40,21 +40,21 @@ const ExperienceCard = () => {
 
 
   return (
-    <div className='flex flex-col items-center min-h-[80vh] px-80 w-full'>
+    <div className='flex flex-col items-center min-h-[80vh] px-60 md:40 sm:20 w-full'>
       <div className='pt-20'>
       <motion.h1 className='text-6xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>
            My <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>Experiences</span>
       </motion.h1>
       </div>
-      <div className='flex items-center justify-center w-full'>
-      <div className='w-1/2'>
+      <div className='flex lg:flex-col lg:justify-between items-center justify-center w-full'>
+      <div className='w-1/2 lg:hidden'>
         <Image 
         src={experiencePic}
         alt='Experience Pic'
         className='w-[80%] h-auto'/>
       </div>
 
-      <div className='pt-12 w-1/2'>
+      <div className='pt-12 w-1/2 lg:w-full'>
           <ul className='w-full flex flex-col items-center justify-between pb-12'>
             <Details 
             position='Software Engineer'
@@ -88,10 +88,21 @@ const ExperienceCard = () => {
             address='Istanbul, Turkey'
             work= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vitae, sit repudiandae dignissimos assumenda.'
             />
+
+          <div className='hidden lg:inline-block'>
+          <Image 
+          src={experiencePic}
+          alt='Experience Pic'
+          className='w-[100%] h-auto self-center'/>
+          </div>
             
           </ul>
 
+          
+
         </div>
+
+        
       
       </div>
       
