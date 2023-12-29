@@ -66,25 +66,25 @@ const ExperienceCard = () => {
             />
             <Details 
             position='Software Engineer'
-            company='Beylikduzu Municipality'
-            companyLink='https://www.beylikduzu.istanbul/'
-            time='September 2023 - Present'
+            company='Istinye University'
+            companyLink='https://istinye.edu.tr/tr'
+            time='March 2023 - June 2023'
             address='Istanbul, Turkey'
             work= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vitae, sit repudiandae dignissimos assumenda.'
             />
             <Details 
-            position='Software Engineer'
-            company='Beylikduzu Municipality'
-            companyLink='https://www.beylikduzu.istanbul/'
-            time='September 2023 - Present'
+            position='AI Software Engineer Intern'
+            company='Etiya'
+            companyLink='https://www.etiya.com/tr'
+            time='July 2022 - September 2022'
             address='Istanbul, Turkey'
             work= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vitae, sit repudiandae dignissimos assumenda.'
             />
             <Details 
-            position='Software Engineer'
-            company='Beylikduzu Municipality'
-            companyLink='https://www.beylikduzu.istanbul/'
-            time='September 2023 - Present'
+            position='Software Engineer Intern'
+            company='MLPCARE'
+            companyLink='https://www.mlpcare.com/'
+            time='February 2022 - June 2022'
             address='Istanbul, Turkey'
             work= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vitae, sit repudiandae dignissimos assumenda.'
             />

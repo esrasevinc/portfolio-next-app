@@ -20,6 +20,18 @@ const ContactMe = () => {
         }
       }
 
+      const handleSubmit = (async (event:any) => {
+        event.preventDefault()
+ 
+        // const formData = new FormData(event.currentTarget)
+        // const response = await fetch('/api/submit', {
+        // method: 'POST',
+        // body: formData,
+        // })
+ 
+      
+      })
+
   return (
     <div className='flex flex-col min-h-[80vh] px-80 items-center w-full'>
     <div className='pt-20'>
@@ -45,7 +57,7 @@ const ContactMe = () => {
         </div>
       
       <div className='w-1/2'>
-        <form className='flex flex-col w-[80%] pt-24'>
+        <form className='flex flex-col w-[80%] pt-24' onSubmit={handleSubmit}>
             <div className='mb-6 flex flex-col'>
             <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-base'>Your e-mail</label>
             <input 
