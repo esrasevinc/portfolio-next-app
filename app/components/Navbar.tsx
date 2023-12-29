@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
 
-    <header className='w-full  h-[10vh] pt-3 pb-3 font-medium text-lg flex items-center justify-around bg-gray-50 dark:bg-dark relative'>
+    <header className='w-full z-10 h-[10vh] pt-3 pb-3 font-medium text-lg flex items-center justify-around bg-gray-50 dark:bg-dark relative'>
 
         <Logo />
 

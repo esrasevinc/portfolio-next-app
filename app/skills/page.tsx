@@ -1,14 +1,13 @@
 import React from 'react'
-import ExperienceCard from '../components/ExperienceCard'
 import TransitionEffect from '../components/TransitionEffect'
 
-const Experience = () => {
+const Skills = () => {
   return (
     <>
         <TransitionEffect />
-        <ExperienceCard />
+        Skills Page
     </>
   )
 }
 
-export default Experience
+export default Skills

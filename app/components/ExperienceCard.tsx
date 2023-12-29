@@ -97,15 +97,8 @@ const ExperienceCard = () => {
           </div>
             
           </ul>
-
-          
-
         </div>
-
-        
-      
       </div>
-      
     </div>
   )
 }

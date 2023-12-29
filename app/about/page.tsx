@@ -5,6 +5,7 @@ import Image from 'next/image'
 import aboutMePic from '../../public/images/about-me.png'
 import { motion } from 'framer-motion'
 import Link from 'next/link';
+import TransitionEffect from '../components/TransitionEffect';
 
 const About = () => {
 
@@ -22,6 +23,7 @@ const About = () => {
 
   return (
     <>
+    <TransitionEffect />
     <div className='flex flex-col items-center min-h-[80vh] justify-between px-80 w-full'>
       <div className='pt-20'>
       <motion.h1 className='text-6xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>

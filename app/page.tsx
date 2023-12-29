@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { BsBoxArrowUpRight } from "react-icons/bs"
 import HireMe from './components/HireMe' 
 import { motion } from 'framer-motion'
+import TransitionEffect from './components/TransitionEffect';
 
 export default function Home() {
 
@@ -24,9 +25,10 @@ export default function Home() {
 
   return (
     <>
-        <div className='flex items-center w-full justify-between px-60 h-[80vh] xl:px-40 lg:px-28 md:px-20 sm:px-12 text-slate-900 dark:text-light'>
+        <TransitionEffect />
+        <div className='flex items-center w-full justify-between px-60 h-[80vh] xl:px-40 xl:py-12 lg:px-28 md:px-20 sm:px-12 text-slate-900 dark:text-light'>
         <div className='w-1/2 lg:w-full lg:flex-col lg:text-center'>
-            <motion.h1 className='text-6xl xl:text-5xl lg:text-4xl lg:text-center md:text-3xl sm:text-2xl font-bold items-center' variants={quote} initial="initial" animate="animate">
+            <motion.h1 className='text-6xl xl:text-4xl lg:text-4xl lg:text-center md:text-3xl sm:text-2xl font-bold items-center' variants={quote} initial="initial" animate="animate">
               Hi there, I'm Esra! 
               <br />
               I'm a <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>software engineer.</span>
