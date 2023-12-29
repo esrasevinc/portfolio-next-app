@@ -24,14 +24,14 @@ export default function Home() {
 
   return (
     <>
-        <div className='flex items-center w-full justify-between px-80 h-[80vh] text-slate-900 dark:text-light'>
+        <div className='flex items-center w-full justify-between px-60 h-[80vh] xl:px-40 lg:px-28 md:px-20 sm:px-12 text-slate-900 dark:text-light'>
         <div className='w-1/2'>
-            <motion.h1 className='text-6xl font-bold items-center' variants={quote} initial="initial" animate="animate">
+            <motion.h1 className='text-6xl xl:text-5xl lg:text-4xl lg:text-center md:text-3xl sm:text-2xl font-bold items-center' variants={quote} initial="initial" animate="animate">
               Hi there, I'm Esra! 
               <br />
               I'm a <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>software engineer.</span>
             </motion.h1>
-            <motion.p className='text-lg font-medium mt-4' initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:'spring'}}>
+            <motion.p className='text-lg font-medium mt-4 md:mt-2 lg:text-sm sm:text-xs' initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:'spring'}}>
                 I am a junior software engineer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non nostrum minima ipsam quasi, aspernatur repellendus rem voluptatum, sapiente aliquam tempore? Alias quasi earum minima mollitia modi aliquid, expedita inventore.
             </motion.p>
             <div className='flex items-center'>

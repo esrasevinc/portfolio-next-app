@@ -10,7 +10,6 @@ import useThemeSwitcher from './hooks/useThemeSwitcher'
 const HireMe = () => {
 
   const { mode, setMode } = useThemeSwitcher()
-
   
 
   return (
