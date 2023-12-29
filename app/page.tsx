@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
         <div className='flex items-center w-full justify-between px-60 h-[80vh] xl:px-40 lg:px-28 md:px-20 sm:px-12 text-slate-900 dark:text-light'>
-        <div className='w-1/2'>
+        <div className='w-1/2 lg:w-full lg:flex-col lg:text-center'>
             <motion.h1 className='text-6xl xl:text-5xl lg:text-4xl lg:text-center md:text-3xl sm:text-2xl font-bold items-center' variants={quote} initial="initial" animate="animate">
               Hi there, I'm Esra! 
               <br />
@@ -34,7 +34,7 @@ export default function Home() {
             <motion.p className='text-lg font-medium mt-4 md:mt-2 lg:text-sm sm:text-xs' initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:'spring'}}>
                 I am a junior software engineer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non nostrum minima ipsam quasi, aspernatur repellendus rem voluptatum, sapiente aliquam tempore? Alias quasi earum minima mollitia modi aliquid, expedita inventore.
             </motion.p>
-            <div className='flex items-center'>
+            <div className='flex items-center lg:self-center md:self-center'>
               <Link 
               href='/' 
               target={'_blank'}
@@ -48,7 +48,7 @@ export default function Home() {
               >Contact Me</Link>
             </div>
         </div>
-        <div className='w-1/2'>
+        <div className='w-1/2 lg:hidden md:inline-block md:w-full items-center justify-between'>
             <Image src={profilePic} alt='Profile Picture' className='w-[100%] h-auto'/>
         </div>
         </div>
