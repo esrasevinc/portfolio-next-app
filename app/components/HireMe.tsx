@@ -10,13 +10,13 @@ import useThemeSwitcher from './hooks/useThemeSwitcher'
 const HireMe = () => {
 
   const { mode, setMode } = useThemeSwitcher()
-  
 
   return (
     <div className='fixed left-8 bottom-4 flex items-center justify-center overflow-hidden dark:text-light md:right-8 md:left-auto md:bottom-1 md:top-auto'>
       <div className='w-56 h-auto flex items-center justify-center relative md:w-32'>
         {mode === 'light' 
-        ? <Image 
+        ? 
+        <Image 
         src={jrSoftwareEngineer} 
         alt='Junior Software Engineer'
         priority
@@ -28,7 +28,7 @@ const HireMe = () => {
             alt='Junior Software Engineer Dark'
             priority
             className='animate-spin-slow' 
-            />
+        />
       }
             
             <Link 
