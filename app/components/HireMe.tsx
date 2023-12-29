@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import jrSoftwareEngineer from '../../public/images/jr-software-engineer.png'
 import jrDeveloperDark from '../../public/images/jr-developer-dark-mode.png'
 import Link from 'next/link'
 import useThemeSwitcher from './hooks/useThemeSwitcher'
 
+
+
 const HireMe = () => {
 
-  const [ mode, setMode ] = useThemeSwitcher(); 
+  const { mode, setMode } = useThemeSwitcher()
+
+  
 
   return (
     <div className='fixed left-8 bottom-4 flex items-center justify-center overflow-hidden dark:text-light'>
@@ -16,12 +20,14 @@ const HireMe = () => {
         ? <Image 
         src={jrSoftwareEngineer} 
         alt='Junior Software Engineer'
+        priority
         className='animate-spin-slow' 
         />
         :
         <Image 
             src={jrDeveloperDark} 
             alt='Junior Software Engineer Dark'
+            priority
             className='animate-spin-slow' 
             />
       }

@@ -12,7 +12,7 @@ import { MdOutlineLightMode } from "react-icons/md";
 const Navbar = () => {
 
     const pathName = usePathname();
-    const [ mode, setMode ] = useThemeSwitcher(); 
+    const { mode, setMode } = useThemeSwitcher(); 
     const [ isOpen, setIsOpen ] = useState(false)
 
     const normalClass = 'mx-6 hover:text-purple-700 hover:underline hover:underline-offset-4 dark:hover:underline dark:hover:underline-offset-4 dark:text-light dark:hover:text-slate-50'

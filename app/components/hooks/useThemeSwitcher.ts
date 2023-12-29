@@ -18,7 +18,8 @@ const useThemeSwitcher = ()  => {
           setMode(check) 
           if (check === 'dark') {
             document.documentElement.classList.add('dark')
-          } else {
+          } 
+          if (check === 'light') {
             document.documentElement.classList.remove('dark')
           }
         }
@@ -27,7 +28,8 @@ const useThemeSwitcher = ()  => {
           setMode(check) 
           if (check === 'dark') {
             document.documentElement.classList.add('dark')
-          } else {
+          } 
+          if (check === 'light') {
             document.documentElement.classList.remove('dark')
           }
         }
@@ -58,7 +60,7 @@ const useThemeSwitcher = ()  => {
 
 
 
-  return [ mode, setMode ] 
+  return { mode, setMode } 
 }
 
 export default useThemeSwitcher
