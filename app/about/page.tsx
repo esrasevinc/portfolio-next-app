@@ -7,6 +7,9 @@ import { motion } from 'framer-motion'
 import Link from 'next/link';
 import TransitionEffect from '../components/TransitionEffect';
 import AboutMeCard from '../components/AboutMeCard';
+import Skills from '../components/Skills';
+import { title } from 'process';
+import { FaReact } from "react-icons/fa";
 
 const About = () => {
 
@@ -53,14 +56,64 @@ const About = () => {
       />
       </div>
 
-      <div className='flex flex-col items-center mt-32'>
-        <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text text-4xl font-bold '>Skills and Technologies</span>
+      <div className='flex flex-col items-center mt-28'>
+        <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text text-5xl font-bold '>Skills and Technologies</span>
+        <div className='grid grid-cols-6 gap-10 w-full pt-8'>
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light' />}
+            title='React'
+            />
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light' />}
+            title='React'
+            />
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light' />}
+            title='React'
+            />
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light' />}
+            title='React'
+            />
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light' />}
+            title='React'
+            />
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light' />}
+            title='React'
+            />
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light'/>}
+            title='React'
+            />
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light' />}
+            title='React'
+            />
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light' />}
+            title='React'
+            />
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light'/>}
+            title='React'
+            />
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light' />}
+            title='React'
+            />
+            <Skills 
+            icon={<FaReact className='w-16 h-16 dark:text-light'/>}
+            title='React'
+            />
 
+        </div>
       </div>
 
       <div className='flex flex-col mt-16 items-center'>
 
-        <p className='text-lg font-medium mt-8 text-dark dark:text-light'>Do you want to transform your ideas into reality?</p>
+        <p className='text-lg font-medium mt-12 text-dark dark:text-light'>Do you want to transform your ideas into digital reality?</p>
         <p className='text-lg font-medium text-dark dark:text-light'>I am here to help.</p>
         <Link 
               href='mailto:esrasevinc@hotmail.com' 
