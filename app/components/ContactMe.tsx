@@ -15,7 +15,7 @@ const ContactMe = () => {
         animate: {
           opacity:1,
           transition: {
-            delay: 0.5
+            delay: 1
           }
         }
       }
@@ -31,7 +31,7 @@ const ContactMe = () => {
         <div className='w-1/2'>
             <div className='flex flex-col w-[80%]'>
                 <h5 className='text-2xl font-bold text-gray-900 dark:text-light pt-20'>Let's Connect!</h5>
-                <motion.p className='font-medium text-gray-800 dark:text-light pt-4' initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:'spring'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus facere velit quia aspernatur eum quaerat ab alias voluptas corporis! Tempore perspiciatis numquam possimus sed ullam alias quibusdam esse quo!</motion.p>
+                <motion.p className='font-medium text-gray-800 dark:text-light pt-4' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus facere velit quia aspernatur eum quaerat ab alias voluptas corporis! Tempore perspiciatis numquam possimus sed ullam alias quibusdam esse quo!</motion.p>
                 <div className='flex items-start gap-8 pt-4'>
                     <Link href='https://www.linkedin.com/in/esra-sevin%C3%A7-36436b224/' target={'_blank'}>
                         <FaLinkedinIn className='w-10 h-10 text-blue-700 dark:text-light'/>

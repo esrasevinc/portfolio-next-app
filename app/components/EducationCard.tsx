@@ -17,7 +17,7 @@ type DetailsProp = {
 
   const Details = ( props : DetailsProp ) => {
     return <li className='flex flex-col w-[75%] items-start justify-between py-12'>
-      <motion.div className='mt-1' initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:'spring'}}>
+      <motion.div className='mt-1' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
         <h3 className='capitalize font-bold text-2xl dark:text-light'>{props.degree}&nbsp;<a href={props.universityLink} target='_blank' className='text-purple-800 dark:text-purple-300 capitalize'>@{props.university}</a></h3>
         <span className='capitalize font-medium text-gray-700 mt-1 dark:text-light'> {props.time} | {props.address} </span>
         <p className='font-medium w-full mt-1 dark:text-light'> {props.description} </p>
@@ -34,7 +34,7 @@ const EducationCard = () => {
         animate: {
           opacity:1,
           transition: {
-            delay: 0.5
+            delay: 1
           }
         }
       }

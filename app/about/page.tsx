@@ -16,7 +16,7 @@ const About = () => {
     animate: {
       opacity:1,
       transition: {
-        delay: 0.5
+        delay: 1
       }
     }
   }
@@ -29,7 +29,7 @@ const About = () => {
       <motion.h1 className='text-6xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>
               So, who <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>am i? </span>
       </motion.h1>
-      <motion.div className='text-gray-800 dark:text-light' initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:'spring'}}>
+      <motion.div className='text-gray-800 dark:text-light' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
       <p className='text-lg font-medium mt-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vitae, sit repudiandae dignissimos assumenda fuga eum officia veniam eos repellendus placeat magnam alias dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quos natus dicta dignissimos facilis? Odio voluptas omnis commodi vero excepturi magnam laboriosam quia. Eveniet esse sed distinctio ex aperiam vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aspernatur, suscipit sequi omnis autem saepe placeat veritatis necessitatibus amet dolore. Porro, ab in. Odio magni voluptates eius? Minima, facere sapiente! </p>
       <br/>
       <br />

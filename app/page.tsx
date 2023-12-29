@@ -18,7 +18,7 @@ export default function Home() {
     animate: {
       opacity:1,
       transition: {
-        delay: 0.5
+        delay: 1
       }
     }
   }
@@ -33,7 +33,7 @@ export default function Home() {
               <br />
               I'm a <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>software engineer.</span>
             </motion.h1>
-            <motion.p className='text-lg font-medium mt-4 md:mt-2 lg:text-sm sm:text-xs' initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:'spring'}}>
+            <motion.p className='text-lg font-medium mt-4 md:mt-2 lg:text-sm sm:text-xs' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
                 I am a junior software engineer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non nostrum minima ipsam quasi, aspernatur repellendus rem voluptatum, sapiente aliquam tempore? Alias quasi earum minima mollitia modi aliquid, expedita inventore.
             </motion.p>
             <div className='flex items-center lg:self-center md:self-center'>
