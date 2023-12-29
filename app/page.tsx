@@ -46,7 +46,7 @@ export default function Home() {
               <Link 
               href='mailto:esrasevinc@hotmail.com' 
               target={'_blank'}
-              className='mt-4 bg-light text-purple-950 dark:bg-dark dark:text-light text-lg font-semibold ml-6 underline underline-offset-4'
+              className={`mt-4 bg-light text-purple-950 dark:bg-dark dark:text-light text-lg font-semibold ml-6 underline underline-offset-4`}
               >Contact Me</Link>
             </div>
         </div>

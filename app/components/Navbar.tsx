@@ -19,7 +19,7 @@ const Navbar = () => {
     const normalClass = 'mx-6 hover:text-purple-700 hover:underline hover:underline-offset-4 dark:hover:underline dark:hover:underline-offset-4 dark:text-light dark:hover:text-slate-50'
     const selectedClass = 'text-purple-700 dark:text-light underline underline-offset-4 dark:underline dark:underline-offset-4'
 
-    const handleClick = () => {
+    const handleOpenNav = () => {
       setIsOpen(!isOpen)
     }
 
@@ -33,7 +33,7 @@ const Navbar = () => {
 
         <Logo />
 
-        <button className='justify-center items-center hidden lg:flex' onClick={handleClick}>
+        <button className='justify-center items-center hidden lg:flex' onClick={handleOpenNav}>
           <MdOutlineMenu className='w-8 h-8 dark:text-light'/>
         </button>
 
@@ -44,7 +44,6 @@ const Navbar = () => {
           <ul>
             <Link href='/' className={`${normalClass} ${pathName === '/' ? selectedClass : ''}`}>Home</Link>
             <Link href='/about' className={`${normalClass} ${pathName === '/about' ? selectedClass : ''}`}>About Me</Link>
-            <Link href='/skills' className={`${normalClass} ${pathName === '/skills' ? selectedClass : ''}`}>Skills</Link>
             <Link href='/education' className={`${normalClass} ${pathName === '/education' ? selectedClass : ''}`}>Education</Link>
             <Link href='/experience' className={`${normalClass} ${pathName === '/experience' ? selectedClass : ''}`}>Experience</Link>
             <Link href='/contact' className={`${normalClass} ${pathName === '/contact' ? selectedClass : ''}`}>Contact Me</Link>
