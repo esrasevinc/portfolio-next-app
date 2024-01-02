@@ -63,7 +63,7 @@ const EducationCard = () => {
             universityLink='https://istinye.edu.tr/tr'
             time='2019 - 2023'
             address='Istanbul, Turkey'
-            description= 'Graduated as high honor student with the first rank and 3.66 GPA.'
+            description= 'Graduated as high honor student with the first rank and 3.66 GPA. Thesis Subject: Face Mask Detection Using Vision Transformers'
             />
             <Details 
             degree='Management Information systems'

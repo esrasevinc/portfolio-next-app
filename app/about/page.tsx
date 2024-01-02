@@ -8,7 +8,6 @@ import Link from 'next/link';
 import TransitionEffect from '../components/TransitionEffect';
 import AboutMeCard from '../components/AboutMeCard';
 import Skills from '../components/Skills';
-import { title } from 'process';
 import { FaReact } from "react-icons/fa";
 import { SiDotnet } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
@@ -124,8 +123,9 @@ const About = () => {
 
       <div className='flex flex-col mt-16 items-center'>
 
-        <p className='text-lg font-medium mt-12 text-dark dark:text-light'>Do you want to transform your ideas into digital reality?</p>
-        <p className='text-lg font-medium text-dark dark:text-light'>I am here to help.</p>
+        <p className='text-xl lg:text-lg font-medium mt-12 text-dark dark:text-light'>Do you want to transform your ideas into digital reality?</p>
+        <p className='text-xl lg:text-lg font-medium text-dark dark:text-light'>I am here to help!</p>
+
         <Link 
               href='mailto:esrasevinc@hotmail.com' 
               target={'_blank'}

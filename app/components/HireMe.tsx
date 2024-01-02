@@ -24,10 +24,10 @@ const HireMe = () => {
         />
         :
         <Image 
-            src={jrDeveloperDark} 
-            alt='Junior Software Engineer Dark'
-            priority
-            className='animate-spin-slow' 
+        src={jrDeveloperDark} 
+        alt='Junior Software Engineer Dark'
+        priority
+        className='animate-spin-slow' 
         />
       }
             
