@@ -38,7 +38,7 @@ const ContactMe = () => {
         //     return false;
         // }
 
-        const response = await fetch("/api/send", {
+        const response = await fetch("/api/submit", {
             method: "POST",
             body: JSON.stringify({ name, email, subject, message }),
             headers: {

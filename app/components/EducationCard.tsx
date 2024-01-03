@@ -47,15 +47,15 @@ const EducationCard = () => {
            <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>Education</span>
       </motion.h1>
       </div>
-      <div className='flex lg:flex-col items-center justify-center w-full'>
-      <div className='w-1/2 lg:hidden'>
+      <div className='flex flex-col md:flex-row md:justify-between md:px-20 items-center justify-center  w-full'>
+      <div className='md:w-1/2 w-full'>
         <Image 
         src={educationPic}
         alt='Education Pic'
         className='w-full h-auto'/>
       </div>
 
-      <div className='pt-12 w-1/2 lg:w-full lg:justify-between lg:self-center'>
+      <div className='pt-12 md:w-1/2 w-full order-first items-center'>
           <ul className='w-full flex flex-col items-center justify-between pb-12'>
             <Details 
             degree='Software Engineering'

@@ -26,17 +26,17 @@ export default function Home() {
   return (
     <>
         <TransitionEffect />
-        <div className='flex flex-col md:flex-row items-center w-full justify-between px-60 h-[80vh] xl:px-40 xl:py-12 lg:px-28 md:px-20 sm:px-12 text-slate-900 dark:text-light'>
-        <div className='lg:w-1/2 w-full text-center'>
-            <motion.h1 className='text-4xl lg:text-6xl text-center font-bold items-center' variants={quote} initial="initial" animate="animate">
+        <div className='flex flex-col lg:flex-row lg:justify-between items-center w-full px-60 min-h-[80vh] xl:px-40 xl:py-12 lg:px-28 md:px-20 sm:px-12 text-slate-900 dark:text-light'>
+        <div className='lg:w-1/2 w-full '>
+            <motion.h1 className='text-2xl md:text-4xl lg:text-6xl text-center font-bold items-center pb-2 lg:pb-4' variants={quote} initial="initial" animate="animate">
               Hi there, I'm Esra! 
               <br />
               I'm a <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>software engineer.</span>
             </motion.h1>
-            <motion.p className='text-lg font-medium mt-4 md:mt-2 lg:text-sm sm:text-xs' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
+            <motion.p className='text-sm md:text-lg text-center md:text-start font-medium' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
                 I am a junior software engineer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non nostrum minima ipsam quasi, aspernatur repellendus rem voluptatum, sapiente aliquam tempore? Alias quasi earum minima mollitia modi aliquid, expedita inventore.
             </motion.p>
-            <div className='flex items-center lg:self-center md:self-center'>
+            <div className='flex items-center justify-center md:justify-start mt-2 lg:mt-4'>
               <Link 
               href='/' 
               target={'_blank'}
@@ -50,8 +50,8 @@ export default function Home() {
               >Contact Me</Link>
             </div>
         </div>
-        <div className='lg:w-1/2 w-full items-center justify-between'>
-            <Image src={profilePic} alt='Profile Picture' className='w-[100%] h-auto'/>
+        <div className='lg:w-1/2 w-full order-first lg:order-last items-center justify-between'>
+            <Image src={profilePic} alt='Profile Picture' className='w-full h-auto'/>
         </div>
         </div>
         <HireMe />
