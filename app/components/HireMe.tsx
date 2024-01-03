@@ -30,13 +30,15 @@ const HireMe = () => {
         className='animate-spin-slow' 
         />
       }
+
+        <Link 
+          href='mailto:esrasevinc@hotmail.com' 
+          target={'_blank'}
+          className='flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-900 dark:bg-light dark:text-dark text-light border border-solid
+          shadow-lg w-20 h-20 md:w-12 md:h-12 text-lg md:text-sm md:text-center rounded-full font-semibold hover:bg-light hover:text-dark hover:border-slate-600'
+          >Hire Me</Link>
             
-            <Link 
-            href='mailto:esrasevinc@hotmail.com' 
-            target={'_blank'}
-            className='flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-900 dark:bg-light dark:text-dark text-light border border-solid
-            shadow-lg w-20 h-20 md:w-12 md:h-12 text-lg md:text-sm md:text-center rounded-full font-semibold hover:bg-light hover:text-dark hover:border-slate-600'
-            >Hire Me</Link>
+            
       </div>
     </div>
   )

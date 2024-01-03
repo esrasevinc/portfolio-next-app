@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useRef } from 'react'
-import { motion, useScroll } from 'framer-motion'
+import { motion } from 'framer-motion'
 import experiencePic from '../../public/images/experience-pic.png'
 import Image from 'next/image';
 

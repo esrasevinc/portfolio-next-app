@@ -1,12 +1,20 @@
 'use client';
 
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { motion } from 'framer-motion'
 
+
 const ContactMe = () => {
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
+    const [loading, setLoading] = useState(false);
+    const [emailSubmitted, setEmailSubmitted] = useState(false);
 
     const quote = {
         initial: {
@@ -20,15 +28,31 @@ const ContactMe = () => {
         }
       }
 
-      const handleSubmit = (async (event:any) => {
-        event.preventDefault()
- 
-        // const formData = new FormData(event.currentTarget)
-        // const response = await fetch('/api/submit', {
-        // method: 'POST',
-        // body: formData,
-        // })
- 
+      const handleSubmit = (async (e: any) => {
+        setLoading(true);
+        e.preventDefault();
+
+        // if (name == "" && email == "") {
+        //     setLoading(false);
+        //     alert("Please enter both name & email id");
+        //     return false;
+        // }
+
+        const response = await fetch("/api/send", {
+            method: "POST",
+            body: JSON.stringify({ name, email, subject, message }),
+            headers: {
+              "Content-Type": "application/json",
+            },
+        })
+
+        const resData = await response.json();
+
+        if (response.status === 200) {
+          console.log("Message sent.");
+          setEmailSubmitted(true);
+        }
+
       
       })
 
@@ -57,24 +81,49 @@ const ContactMe = () => {
         </div>
       
       <div className='w-1/2'>
+      {emailSubmitted 
+      ? 
+      (
+          <p className="text-green-500 text-sm mt-2">
+            Email sent successfully!
+          </p>
+        
+      ) : 
+      (
         <form className='flex flex-col w-[80%] pt-24' onSubmit={handleSubmit}>
+            <div className='mb-6 flex flex-col'>
+            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-base'>Your name</label>
+            <input 
+            type='text' 
+            id='name' 
+            name='name'
+            required
+            placeholder='Jack'
+            onChange={(e) => setName(e.target.value)}
+            className='bg-gray-50 border border-gray-500 px-2.5 py-1.5 rounded-lg'/>
+            </div>
+
             <div className='mb-6 flex flex-col'>
             <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-base'>Your e-mail</label>
             <input 
             type='email' 
             id='email' 
+            name='email'
             required
             placeholder='abcdefgh@gmail.com'
+            onChange={(e) => setEmail(e.target.value)}
             className='bg-gray-50 border border-gray-500 px-2.5 py-1.5 rounded-lg'/>
             </div>
 
             <div className='mb-6 flex flex-col'>
             <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-base'>Subject</label>
             <input 
-            type='subject' 
+            type='text' 
             id='subject' 
+            name='subject'
             required
             placeholder='Just saying hi!'
+            onChange={(e) => setSubject(e.target.value)}
             className='bg-gray-50 border border-gray-500 px-2.5 py-1.5 my-1.5 rounded-lg'/>
             </div>
 
@@ -82,9 +131,11 @@ const ContactMe = () => {
             <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-base'>Message</label>
             <textarea 
             id='message' 
+            name='message'
             required
             rows={5}
             placeholder="Let's talk about..."
+            onChange={(e) => setMessage(e.target.value)}
             className='bg-gray-50 border border-gray-500 px-2.5 py-1.5 my-1.5 rounded-lg'/>
             </div>
 
@@ -93,7 +144,8 @@ const ContactMe = () => {
             className='bg-purple-950 hover:bg-purple-800 dark:bg-light dark:text-purple-900 dark:hover:text-light text-light font-medium border rounded-lg py-2.5 px-5 w-full mb-6 shadow-md'
             >Send Message</button>
 
-        </form>
+        </form> 
+        )}
       </div>
       </div>
     </div>
