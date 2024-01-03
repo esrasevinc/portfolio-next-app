@@ -40,19 +40,19 @@ const ExperienceCard = () => {
 
 
   return (
-    <div className='flex flex-col items-center min-h-[80vh] px-60 md:40 sm:20 w-full'>
+    <div className='flex flex-col items-center min-h-[80vh] px-60 md:px-40 sm:px-20 w-full'>
       <div className='pt-20'>
       <motion.h1 className='text-5xl lg:text-6xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>
            My <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>Experiences</span>
       </motion.h1>
       </div>
       <div className='flex flex-col lg:flex-row items-center lg:justify-center lg:w-full'>
-        
+
       <div className='lg:w-1/2'>
         <Image 
         src={experiencePic}
         alt='Experience Pic'
-        className='w-[100%] h-auto'/>
+        className='w-full h-auto'/>
       </div>
 
       <div className='pt-6 lg:pt-12 lg:w-1/2 w-full'>

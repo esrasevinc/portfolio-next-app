@@ -43,20 +43,20 @@ const EducationCard = () => {
   return (
     <div className='flex flex-col items-center min-h-[80vh] px-60 w-full'>
       <div className='pt-20'>
-      <motion.h1 className='text-6xl text-center font-bold items-center' variants={quote} initial='initial' animate='animate'>
+      <motion.h1 className='text-5xl lg:text-5xl text-center font-bold items-center' variants={quote} initial='initial' animate='animate'>
            <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>Education</span>
       </motion.h1>
       </div>
-      <div className='flex flex-col md:flex-row md:justify-between md:px-20 items-center justify-center  w-full'>
-      <div className='md:w-1/2 w-full'>
+      <div className='flex flex-col lg:flex-row items-center lg:justify-center lg:w-full mt-6'>
+      <div className='lg:w-1/2'>
         <Image 
         src={educationPic}
         alt='Education Pic'
         className='w-full h-auto'/>
       </div>
 
-      <div className='pt-12 md:w-1/2 w-full order-first items-center'>
-          <ul className='w-full flex flex-col items-center justify-between pb-12'>
+      <div className='pt-6 lg:pt-12 lg:w-1/2 w-full'>
+          <ul className='w-full flex flex-col items-center justify-between pb-6 lg:pb-12'>
             <Details 
             degree='Software Engineering'
             university='Istinye University'
