@@ -33,11 +33,11 @@ const Navbar = () => {
 
         <Logo />
 
-        <button className='justify-center items-center hidden lg:flex' onClick={handleOpenNav}>
-          <MdOutlineMenu className='w-8 h-8 dark:text-light'/>
+        <button className='justify-center items-center lg:hidden flex' onClick={handleOpenNav}>
+          <MdOutlineMenu className='w-12 h-12 dark:text-light'/>
         </button>
 
-        <div className='lg:hidden flex items-center justify-between'>
+        <div className='hidden lg:flex items-center justify-between'>
 
         <nav>
           <div className='flex items-center'>

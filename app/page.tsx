@@ -26,9 +26,9 @@ export default function Home() {
   return (
     <>
         <TransitionEffect />
-        <div className='flex items-center w-full justify-between px-60 h-[80vh] xl:px-40 xl:py-12 lg:px-28 md:px-20 sm:px-12 text-slate-900 dark:text-light'>
-        <div className='w-1/2 lg:w-full lg:flex-col lg:text-center'>
-            <motion.h1 className='text-6xl xl:text-4xl lg:text-4xl lg:text-center md:text-3xl sm:text-2xl font-bold items-center' variants={quote} initial="initial" animate="animate">
+        <div className='flex flex-col md:flex-row items-center w-full justify-between px-60 h-[80vh] xl:px-40 xl:py-12 lg:px-28 md:px-20 sm:px-12 text-slate-900 dark:text-light'>
+        <div className='lg:w-1/2 w-full text-center'>
+            <motion.h1 className='text-4xl lg:text-6xl text-center font-bold items-center' variants={quote} initial="initial" animate="animate">
               Hi there, I'm Esra! 
               <br />
               I'm a <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>software engineer.</span>
@@ -50,7 +50,7 @@ export default function Home() {
               >Contact Me</Link>
             </div>
         </div>
-        <div className='w-1/2 lg:hidden md:inline-block md:w-full items-center justify-between'>
+        <div className='lg:w-1/2 w-full items-center justify-between'>
             <Image src={profilePic} alt='Profile Picture' className='w-[100%] h-auto'/>
         </div>
         </div>

@@ -26,7 +26,7 @@ export default function RootLayout({
       <head>
       <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
       </head>
-      <body className={`${montserrat.className} font-mont bg-light dark:bg-dark w-full min-h-screen`} >
+      <body className={`${montserrat.className} font-mont bg-light dark:bg-dark w-full min-h-dvh relative`} >
         <Script id='theme-switcher' strategy='beforeInteractive'>
           {`
           if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -37,7 +37,9 @@ export default function RootLayout({
           `}
         </Script>
         <Navbar />
+        <div className='pb-2.5'>
         {children}
+        </div>
         <Footer />
       </body>
     </html>
