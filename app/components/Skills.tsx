@@ -11,7 +11,7 @@ const Skills = (props: SkillsProps) => {
     <>
         <div className='flex flex-col items-center justify-center'>
             <span>{props.icon}</span>
-            <p className='text-md font-medium dark:text-light mt-2'>{props.title}</p>
+            <p className='text-sm md:text-base font-medium dark:text-light mt-2 text-center'>{props.title}</p>
         </div>
     </>
   )

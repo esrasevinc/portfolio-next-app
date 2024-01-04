@@ -28,7 +28,7 @@ export default function Home() {
         <TransitionEffect />
         <div className='flex flex-col lg:flex-row lg:justify-between items-center w-full lg:px-40 min-h-[80vh] px-12 xl:py-12 text-slate-900 dark:text-light mt-12'>
         <div className='lg:w-1/2 w-full '>
-            <motion.h1 className='text-xl md:text-4xl lg:text-6xl text-center font-bold items-center pb-2 lg:pb-4 pt-2' variants={quote} initial="initial" animate="animate">
+            <motion.h1 className='text-3xl md:text-4xl lg:text-6xl text-center font-bold items-center pb-2 lg:pb-4 pt-2' variants={quote} initial="initial" animate="animate">
               Hi there, I'm Esra! 
               <br />
               I'm a <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>software engineer.</span>

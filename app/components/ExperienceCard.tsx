@@ -17,7 +17,7 @@ type DetailsProp = {
 const Details = ( props : DetailsProp ) => {
   return <li className='flex flex-col first:mt-0 last:mb-0 w-[75%] items-start justify-between py-8'>
     <motion.div className='mt-1' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
-      <h3 className='capitalize font-bold text-2xl dark:text-light'>{props.position}&nbsp;<a href={props.companyLink} target='_blank' className='text-purple-800 dark:text-purple-300 capitalize'>@{props.company}</a></h3>
+      <h3 className='capitalize font-bold text-lg md:text-2xl dark:text-light'>{props.position}&nbsp;<a href={props.companyLink} target='_blank' className='text-purple-800 dark:text-purple-300 capitalize'>@{props.company}</a></h3>
       <span className='capitalize font-medium text-gray-700 dark:text-light mt-1'> {props.time} | {props.address} </span>
       <p className='font-medium w-full mt-1 dark:text-light'> {props.work} </p>
     </motion.div>
@@ -40,9 +40,9 @@ const ExperienceCard = () => {
 
 
   return (
-    <div className='flex flex-col items-center min-h-[80vh] lg:px-60 w-full'>
+    <div className='flex flex-col items-center min-h-[80vh] lg:px-40 w-full'>
       <div className='pt-20'>
-      <motion.h1 className='text-5xl lg:text-6xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>
+      <motion.h1 className='text-4xl lg:text-5xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>
            My <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>Experiences</span>
       </motion.h1>
       </div>
