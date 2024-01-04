@@ -58,20 +58,19 @@ const Navbar = () => {
     </div>
 
     {isOpen &&
-    <div className='z-9999 absolute bg-light dark:bg-dark/90 items-center justify-center text-center'> 
+    <div className='z-9999 absolute w-full min-h-screen bg-light dark:bg-dark items-center justify-center text-center text-xl pt-24 font-medium'> 
     <nav>
-    <div className='flex flex-col items-center'>
-    <ul className='flex flex-col p-2'>
-      <Link href='/' className={`${normalClass} ${pathName === '/' ? selectedClass : ''}`}>Home</Link>
-      <Link href='/about' className={`${normalClass} ${pathName === '/about' ? selectedClass : ''}`}>About Me</Link>
-      <Link href='/skills' className={`${normalClass} ${pathName === '/skills' ? selectedClass : ''}`}>Skills</Link>
-      <Link href='/education' className={`${normalClass} ${pathName === '/education' ? selectedClass : ''}`}>Education</Link>
-      <Link href='/experience' className={`${normalClass} ${pathName === '/experience' ? selectedClass : ''}`}>Experience</Link>
-      <Link href='/contact' className={`${normalClass} ${pathName === '/contact' ? selectedClass : ''}`}>Contact Me</Link>
+    <div>
+    <ul className='flex flex-col'>
+      <Link href='/' onClick={handleOpenNav} className={`${normalClass} mt-3 ${pathName === '/' ? selectedClass : ''}`}>Home</Link>
+      <Link href='/about' onClick={handleOpenNav} className={`${normalClass} mt-3 ${pathName === '/about' ? selectedClass : ''}`}>About Me</Link>
+      <Link href='/education' onClick={handleOpenNav} className={`${normalClass} mt-3 ${pathName === '/education' ? selectedClass : ''}`}>Education</Link>
+      <Link href='/experience' onClick={handleOpenNav} className={`${normalClass} mt-3  ${pathName === '/experience' ? selectedClass : ''}`}>Experience</Link>
+      <Link href='/contact' onClick={handleOpenNav} className={`${normalClass} mt-3 ${pathName === '/contact' ? selectedClass : ''}`}>Contact Me</Link>
     </ul>
     <button
       onClick={handleSwitchMode}
-      className='ml-4 p-1 rounded-full'>
+      className='rounded-full mt-4'>
       {mode === 'dark' ?  <MdOutlineLightMode className='w-10 h-10 font-bold text-light' /> : <MdDarkMode className='w-10 h-10 text-dark' /> }
     </button>
     </div>
