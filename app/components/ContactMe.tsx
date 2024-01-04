@@ -68,7 +68,9 @@ const ContactMe = () => {
         <div className='md:w-1/2 w-full'>
             <div className='flex flex-col md:w-[80%]'>
                 <h5 className='text-lg md:text-2xl text-center md:text-start items-center font-bold text-gray-900 dark:text-light pt-6 md:pt-20'>Let's Connect!</h5>
-                <motion.p className='text-base md:text-lg font-medium text-gray-800 text-center md:text-start dark:text-light pt-2' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus facere velit quia aspernatur eum quaerat ab alias voluptas corporis! Tempore perspiciatis numquam possimus sed ullam alias quibusdam esse quo!</motion.p>
+                <motion.p className='text-base md:text-lg font-medium text-gray-800 text-start dark:text-light pt-2' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
+                As I embark on this exciting journey in the world of computer science, I invite you to explore my portfolio and witness firsthand the projects that reflect my commitment to excellence and creativity. Let's connect and explore how we can bring your ideas to life through the power of code.
+                </motion.p>
                 <div className='flex self-center md:self-start gap-8 pt-4'>
                     <Link href='https://www.linkedin.com/in/esra-sevin%C3%A7-36436b224/' target={'_blank'}>
                         <FaLinkedinIn className='w-10 h-10 text-blue-700 dark:text-light'/>

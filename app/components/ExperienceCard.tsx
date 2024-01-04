@@ -60,20 +60,20 @@ const ExperienceCard = () => {
       <div className='pt-6 lg:pt-12 lg:w-1/2 w-full'>
           <ul className='w-full flex flex-col items-center justify-between pb-6 lg:pb-12'>
             <Details 
-            position='Software Engineer'
+            position='Junior Software Engineer'
             company='Beylikduzu Municipality'
             companyLink='https://www.beylikduzu.istanbul/'
             time='September 2023 - Present'
             address='Istanbul, Turkey'
-            work= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vitae, sit repudiandae dignissimos assumenda.'
+            work= {'Gained hands-on experience in full-stack development, honing skills in both front-end and back-end technologies.\nAssisted in the design and implementation of database solutions, optimizing data storage and retrieval processes.\nCollaborated with team members to troubleshoot and resolve issues, ensuring the smooth functioning of applications.'}
             />
             <Details 
-            position='Software Engineer'
+            position='Junior Software Engineer'
             company='Istinye University'
             companyLink='https://istinye.edu.tr/tr'
             time='March 2023 - June 2023'
             address='Istanbul, Turkey'
-            work= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vitae, sit repudiandae dignissimos assumenda.'
+            work= {'Developed backend functionalities using .NET Core, contributing to the overall architecture of web applications.\nWorked closely with the database team to design, implement, and maintain MSSQL databases, ensuring data consistency and performance.\nAssisted in troubleshooting and resolving technical issues, contributing to the overall improvement of application stability.'}
             />
             <Details 
             position='AI Software Engineer Intern'
@@ -81,7 +81,7 @@ const ExperienceCard = () => {
             companyLink='https://www.etiya.com/tr'
             time='July 2022 - September 2022'
             address='Istanbul, Turkey'
-            work= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vitae, sit repudiandae dignissimos assumenda.'
+            work= {'Worked closely with the AI research and development team on projects involving deep learning, NLP, and transformers.\nCollaborated in the design and implementation of AI models, contributing to the advancement of the company product offerings.\nConducted literature reviews and stayed informed about the latest research trends in deep learning and NLP.\nParticipated in team discussions, providing valuable insights and feedback during the development lifecycle.'}
             />
             <Details 
             position='Software Engineer Intern'
@@ -89,7 +89,7 @@ const ExperienceCard = () => {
             companyLink='https://www.mlpcare.com/'
             time='February 2022 - June 2022'
             address='Istanbul, Turkey'
-            work= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vitae, sit repudiandae dignissimos assumenda.'
+            work= {'Worked closely with the backend development team to design, implement, and maintain .NET-based applications supporting healthcare operations.\nCollaborated with senior developers to enhance the scalability and responsiveness of existing MVC applications, improving overall system efficiency.\nAssisted in database design and management tasks, ensuring the secure and efficient storage of healthcare data.'}
             />
             
           </ul>

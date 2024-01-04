@@ -66,7 +66,7 @@ const EducationCard = () => {
             universityLink='https://istinye.edu.tr/tr'
             time='2019 - 2023'
             address='Istanbul, Turkey'
-            description= {'Graduated as high honor student with the first rank and 3.66 GPA.\nRelevant courses included Advanced Programming, Data Structures and Algorithms, Visual Programming, Database Systems, Object Oriented Programming, Data Analysis, Mobile Application Design and Development, Machine Leraning and Deep Learning etc.\nThesis Subject: Face Mask Detection Using Vision Transformers.'}
+            description= {'Graduated as high honor student with 3.66 GPA and the 1st rank within over 80 students.\nRelevant courses included Advanced Programming, Data Structures and Algorithms, Visual Programming, Database Systems, Object Oriented Programming, Data Analysis, Mobile Application Design and Development, Machine Leraning and Deep Learning etc.\nThesis Subject: Face Mask Detection Using Vision Transformers.'}
             />
             <Details 
             degree='Management Information systems'

@@ -40,7 +40,7 @@ const About = () => {
     <TransitionEffect />
     <div className='flex flex-col items-center min-h-[80vh] justify-between lg:px-40 px-12 w-full'>
       <div className='pt-16 md:pt-20'>
-      <motion.h1 className='text-4xl lg:text-5xl text-center font-bold items-center dark:text-light pb-2 lg:pb-4' variants={quote} initial='initial' animate='animate'>
+      <motion.h1 className='text-4xl md:text-5xl lg:text-6xl text-center font-bold items-center dark:text-light pb-2 lg:pb-4' variants={quote} initial='initial' animate='animate'>
               So, who <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>am i? </span>
       </motion.h1>
       
@@ -49,20 +49,20 @@ const About = () => {
 
       <div className='grid lg:grid-cols-2 gap-6 pt-6 md:pt-16'>
       <AboutMeCard 
-      title='Engineering Degree'
-      describtion='orem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vita'
+      title='Problem Solver'
+      describtion='I see each project as an opportunity to solve real-world problems through code. My analytical mindset and attention to detail enable me to identify challenges and devise elegant solutions. I am not just a coder; I am a problem solver who relishes in the process of turning complex issues into streamlined, user-friendly experiences.'
       />
       <AboutMeCard 
-      title='Engineering Degree'
-      describtion='orem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vita'
+      title='Continuous Learner'
+      describtion='The tech landscape is ever-evolving, and I am committed to staying at the forefront of emerging trends and technologies. My insatiable appetite for learning drives me to explore new frameworks, tools, and methodologies, ensuring that my skill set remains sharp and relevant.'
       />
       <AboutMeCard 
-      title='Engineering Degree'
-      describtion='orem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vita orem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vita'
+      title='Collaborative Spirit'
+      describtion='I thrive in collaborative environments where diverse perspectives converge to create something greater than the sum of its parts. I actively seek feedback, value open communication, and enjoy working alongside fellow enthusiasts who share my passion for innovation.'
       />
       <AboutMeCard 
-      title='Engineering Degree'
-      describtion='orem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vita'
+      title='Beyond Code'
+      describtion='While my heart lies in coding, I am not just confined to the screen. I understand the importance of balancing technical expertise with effective communication and project management skills. This holistic approach allows me to contribute to projects from conception to delivery seamlessly.'
       />
       </div>
 
