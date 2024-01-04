@@ -11,7 +11,7 @@ export async function POST(req: any, res: any) {
     const data = await resend.emails.send({
       from: `${process.env.FROM_EMAIL}`,
       to: `${process.env.TO_EMAIL}`,
-      subject: `🎉 New submission to your contact form!`,
+      subject: '🎉 New submission to your contact form!',
       react: EmailTemplate({ name, email, subject, message }),
       html: ''
     });

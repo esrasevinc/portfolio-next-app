@@ -16,6 +16,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     <p>{name} ({email}) has submitted the contact form on your website. Their
       message is: 
       <br />
-      ${message}!</p>
+      {message}
+    </p>
   </div>
 );

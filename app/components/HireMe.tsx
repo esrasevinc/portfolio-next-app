@@ -1,16 +1,8 @@
 import React, { useEffect } from 'react'
-import Image from 'next/image'
-import jrSoftwareEngineer from '../../public/images/jr-software-engineer.png'
-import jrDeveloperDark from '../../public/images/jr-developer-dark-mode.png'
 import Link from 'next/link'
-import useThemeSwitcher from './hooks/useThemeSwitcher'
 import { DeveloperIcon } from './DeveloperIcon'
 
-
-
 const HireMe = () => {
-
-  const { mode, setMode } = useThemeSwitcher()
 
   return (
     <div className='fixed lg:left-8 lg:bottom-4 flex items-center  dark:text-light right-8 left-auto bottom-1 top-auto'>
@@ -19,7 +11,6 @@ const HireMe = () => {
        <DeveloperIcon 
        className={`animate-spin-slow fill-dark dark:fill-light`}
        />
-
       
         <Link 
           href='mailto:esrasevinc@hotmail.com' 

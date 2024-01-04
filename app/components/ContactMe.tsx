@@ -51,9 +51,11 @@ const ContactMe = () => {
         if (response.status === 200) {
           console.log("Message sent.");
           setEmailSubmitted(true);
+          setName('');
+          setEmail('');
+          setSubject('');
+          setMessage('');
         }
-
-      
       })
 
   return (
@@ -84,7 +86,7 @@ const ContactMe = () => {
       {emailSubmitted 
       ? 
       (
-          <p className="text-green-500 text-sm mt-2">
+          <p className="text-green-500 text-sm mt-2 ml-6">
             Email sent successfully!
           </p>
         
