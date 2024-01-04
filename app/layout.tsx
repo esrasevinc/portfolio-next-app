@@ -26,7 +26,7 @@ export default function RootLayout({
       <head>
       <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
       </head>
-      <body className={`${montserrat.className} font-mont bg-light dark:bg-dark w-full min-h-dvh relative`} >
+      <body className={`${montserrat.className} font-mont bg-light dark:bg-dark w-full  relative`} >
         <Script id='theme-switcher' strategy='beforeInteractive'>
           {`
           if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
