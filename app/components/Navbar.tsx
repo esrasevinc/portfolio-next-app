@@ -58,7 +58,7 @@ const Navbar = () => {
     </div>
 
     {isOpen &&
-    <div className='z-9999 absolute w-full min-h-screen bg-light dark:bg-dark items-center justify-center text-center text-2xl pt-36 font-medium'> 
+    <div className='z-30 absolute w-full min-h-screen bg-light dark:bg-dark items-center justify-center text-center text-2xl pt-32 font-medium'> 
     <nav>
     <div>
     <ul className='flex flex-col'>

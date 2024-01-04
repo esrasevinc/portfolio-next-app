@@ -16,11 +16,14 @@ type DetailsProp = {
   }
 
   const Details = ( props : DetailsProp ) => {
-    return <li className='flex flex-col w-[75%] items-center justify-between py-12'>
+    return <li className='flex flex-col w-[75%] items-center justify-between py-12 text-start'>
       <motion.div className='mt-1' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
         <h3 className='capitalize font-bold text-lg md:text-2xl dark:text-light'>{props.degree}&nbsp;<a href={props.universityLink} target='_blank' className='text-purple-800 dark:text-purple-300 capitalize'>@{props.university}</a></h3>
         <span className='capitalize font-medium text-gray-700 mt-1 dark:text-light'> {props.time} | {props.address} </span>
-        <p className='font-medium w-full mt-1 dark:text-light'> {props.description} </p>
+        {props.description.split("\n").map((str) => (
+        <p className='font-medium w-full mt-1 dark:text-light'>{str}</p>
+        ))}
+
       </motion.div>
     </li>
   }
@@ -63,7 +66,7 @@ const EducationCard = () => {
             universityLink='https://istinye.edu.tr/tr'
             time='2019 - 2023'
             address='Istanbul, Turkey'
-            description= 'Graduated as high honor student with the first rank and 3.66 GPA. Thesis Subject: Face Mask Detection Using Vision Transformers'
+            description= {'Graduated as high honor student with the first rank and 3.66 GPA.\nRelevant courses included Advanced Programming, Data Structures and Algorithms, Visual Programming, Database Systems, Object Oriented Programming, Data Analysis, Mobile Application Design and Development, Machine Leraning and Deep Learning etc.\nThesis Subject: Face Mask Detection Using Vision Transformers.'}
             />
             <Details 
             degree='Management Information systems'
@@ -71,7 +74,7 @@ const EducationCard = () => {
             universityLink='https://www.anadolu.edu.tr/'
             time='2023 - Present'
             address='Istanbul, Turkey'
-            description= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium quam ad optio! Illum temporibus vitae, sit repudiandae dignissimos assumenda.'
+            description= {'1st year student still attending.\nIncludes courses such as Database Management Systems, Systems Analysis and Design, Business Intelligence and Analytics, Enterprise Resource Planning (ERP) Systems, Project Management in Information Systems, IT Ethics and Professionalism.'}
             />
           </ul>
         </div>
