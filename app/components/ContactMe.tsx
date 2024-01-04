@@ -6,7 +6,6 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { motion } from 'framer-motion'
 
-
 const ContactMe = () => {
 
     const [name, setName] = useState("");
@@ -59,18 +58,18 @@ const ContactMe = () => {
       })
 
   return (
-    <div className='flex flex-col min-h-[80vh] px-80 items-center w-full'>
-    <div className='pt-20'>
-      <motion.h1 className='text-6xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>
+    <div className='flex flex-col min-h-[80vh] lg:px-60 px-14 items-center w-full'>
+    <div className='pt-16 md:pt-20'>
+      <motion.h1 className='text-4xl md:text-5xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>
            Say <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>hello</span> to me!
       </motion.h1>
       </div>
-      <div className='flex w-full items-center justify-between'>
-        <div className='w-1/2'>
-            <div className='flex flex-col w-[80%]'>
-                <h5 className='text-2xl font-bold text-gray-900 dark:text-light pt-20'>Let's Connect!</h5>
-                <motion.p className='font-medium text-gray-800 dark:text-light pt-4' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus facere velit quia aspernatur eum quaerat ab alias voluptas corporis! Tempore perspiciatis numquam possimus sed ullam alias quibusdam esse quo!</motion.p>
-                <div className='flex items-start gap-8 pt-4'>
+      <div className='flex flex-col md:flex-row md:justify-around w-full items-center justify-between'>
+        <div className='md:w-1/2 w-full'>
+            <div className='flex flex-col md:w-[80%]'>
+                <h5 className='text-lg md:text-2xl text-center md:text-start items-center font-bold text-gray-900 dark:text-light pt-6 md:pt-20'>Let's Connect!</h5>
+                <motion.p className='text-base md:text-lg font-medium text-gray-800 text-center md:text-start dark:text-light pt-2' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus facere velit quia aspernatur eum quaerat ab alias voluptas corporis! Tempore perspiciatis numquam possimus sed ullam alias quibusdam esse quo!</motion.p>
+                <div className='flex self-center md:self-start gap-8 pt-4'>
                     <Link href='https://www.linkedin.com/in/esra-sevin%C3%A7-36436b224/' target={'_blank'}>
                         <FaLinkedinIn className='w-10 h-10 text-blue-700 dark:text-light'/>
                     </Link>
@@ -82,19 +81,19 @@ const ContactMe = () => {
 
         </div>
       
-      <div className='w-1/2'>
+      <div className='md:w-1/2 w-full'>
       {emailSubmitted 
       ? 
       (
-          <p className="text-green-500 text-sm mt-2 ml-6">
+          <p className="text-green-600 font-semibold text-sm mt-2 ml-10">
             Email sent successfully!
           </p>
         
       ) : 
       (
-        <form className='flex flex-col w-[80%] pt-24' onSubmit={handleSubmit}>
+        <form className='flex flex-col w-full md:pt-20 pt-14' onSubmit={handleSubmit}>
             <div className='mb-6 flex flex-col'>
-            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-base'>Your name</label>
+            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-sm md:text-base'>Your name</label>
             <input 
             type='text' 
             id='name' 
@@ -106,7 +105,7 @@ const ContactMe = () => {
             </div>
 
             <div className='mb-6 flex flex-col'>
-            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-base'>Your e-mail</label>
+            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-sm md:text-base'>Your e-mail</label>
             <input 
             type='email' 
             id='email' 
@@ -118,7 +117,7 @@ const ContactMe = () => {
             </div>
 
             <div className='mb-6 flex flex-col'>
-            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-base'>Subject</label>
+            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-sm md:text-base'>Subject</label>
             <input 
             type='text' 
             id='subject' 
@@ -130,7 +129,7 @@ const ContactMe = () => {
             </div>
 
             <div className='mb-6 flex flex-col'>
-            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-base'>Message</label>
+            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-sm md:text-base'>Message</label>
             <textarea 
             id='message' 
             name='message'
@@ -143,7 +142,7 @@ const ContactMe = () => {
 
             <button 
             type='submit'
-            className='bg-purple-950 hover:bg-purple-800 dark:bg-light dark:text-purple-900 dark:hover:text-light text-light font-medium border rounded-lg py-2.5 px-5 w-full mb-6 shadow-md'
+            className='bg-purple-950 hover:bg-purple-800 dark:bg-light dark:text-purple-900 dark:hover:text-light text-light font-medium text-sm md:text-lg border rounded-lg py-2.5 px-5 w-full mb-6 shadow-md'
             >Send Message</button>
 
         </form> 

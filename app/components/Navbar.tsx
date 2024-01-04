@@ -17,7 +17,7 @@ const Navbar = () => {
     const { mode, setMode } = useThemeSwitcher(); 
     const [ isOpen, setIsOpen ] = useState(false)
 
-    const normalClass = 'mx-6 hover:text-purple-700 hover:underline hover:underline-offset-4 dark:hover:underline dark:hover:underline-offset-4 dark:text-light dark:hover:text-slate-50'
+    const normalClass = 'mx-6 hover:text-purple-700 hover:underline hover:underline-offset-4 dark:hover:underline dark:hover:underline-offset-4 dark:text-light dark:hover:text-slate-200'
     const selectedClass = 'text-purple-700 dark:text-light underline underline-offset-4 dark:underline dark:underline-offset-4'
 
     const handleOpenNav = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
     <div className='w-full z-10 h-[10vh] pt-3 pb-3 font-medium text-lg flex items-center justify-around bg-gray-50 dark:bg-dark relative'>
         <Logo />
         <button className='justify-between items-center lg:hidden flex' onClick={handleOpenNav}>
-          {isOpen ? <MdCancel className='w-12 h-12 dark:text-light' /> : <MdOutlineMenu className='w-12 h-12 dark:text-light'/>}
+          {isOpen ? <MdCancel className='w-10 h-10 md:w-12 md:h-12 text-dark/80 dark:text-light' /> : <MdOutlineMenu className='w-10 h-10 md:w-12 md:h-12 text-dark/80 dark:text-light'/>}
         </button>
 
         <div className='hidden lg:flex items-center justify-between'>
@@ -58,19 +58,19 @@ const Navbar = () => {
     </div>
 
     {isOpen &&
-    <div className='z-9999 absolute w-full min-h-screen bg-light dark:bg-dark items-center justify-center text-center text-xl pt-24 font-medium'> 
+    <div className='z-9999 absolute w-full min-h-screen bg-light dark:bg-dark items-center justify-center text-center text-2xl pt-36 font-medium'> 
     <nav>
     <div>
     <ul className='flex flex-col'>
-      <Link href='/' onClick={handleOpenNav} className={`${normalClass} mt-3 ${pathName === '/' ? selectedClass : ''}`}>Home</Link>
-      <Link href='/about' onClick={handleOpenNav} className={`${normalClass} mt-3 ${pathName === '/about' ? selectedClass : ''}`}>About Me</Link>
-      <Link href='/education' onClick={handleOpenNav} className={`${normalClass} mt-3 ${pathName === '/education' ? selectedClass : ''}`}>Education</Link>
-      <Link href='/experience' onClick={handleOpenNav} className={`${normalClass} mt-3  ${pathName === '/experience' ? selectedClass : ''}`}>Experience</Link>
-      <Link href='/contact' onClick={handleOpenNav} className={`${normalClass} mt-3 ${pathName === '/contact' ? selectedClass : ''}`}>Contact Me</Link>
+      <Link href='/' onClick={handleOpenNav} className={`${normalClass} mt-4 text-dark/80 ${pathName === '/' ? selectedClass : ''}`}>Home</Link>
+      <Link href='/about' onClick={handleOpenNav} className={`${normalClass} mt-4 text-dark/80 ${pathName === '/about' ? selectedClass : ''}`}>About Me</Link>
+      <Link href='/education' onClick={handleOpenNav} className={`${normalClass} mt-4 text-dark/80 ${pathName === '/education' ? selectedClass : ''}`}>Education</Link>
+      <Link href='/experience' onClick={handleOpenNav} className={`${normalClass} mt-4 text-dark/80 ${pathName === '/experience' ? selectedClass : ''}`}>Experience</Link>
+      <Link href='/contact' onClick={handleOpenNav} className={`${normalClass} mt-4 text-dark/80 ${pathName === '/contact' ? selectedClass : ''}`}>Contact Me</Link>
     </ul>
     <button
       onClick={handleSwitchMode}
-      className='rounded-full mt-4'>
+      className='rounded-full mt-10'>
       {mode === 'dark' ?  <MdOutlineLightMode className='w-10 h-10 font-bold text-light' /> : <MdDarkMode className='w-10 h-10 text-dark' /> }
     </button>
     </div>

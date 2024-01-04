@@ -40,7 +40,7 @@ const About = () => {
     <TransitionEffect />
     <div className='flex flex-col items-center min-h-[80vh] justify-between lg:px-40 px-12 w-full'>
       <div className='pt-16 md:pt-20'>
-      <motion.h1 className='text-4xl lg:text-5xl text-center font-bold items-center dark:text-light pb-2 lg:pb-4 pt-2' variants={quote} initial='initial' animate='animate'>
+      <motion.h1 className='text-4xl lg:text-5xl text-center font-bold items-center dark:text-light pb-2 lg:pb-4' variants={quote} initial='initial' animate='animate'>
               So, who <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>am i? </span>
       </motion.h1>
       

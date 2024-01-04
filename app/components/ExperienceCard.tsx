@@ -41,7 +41,7 @@ const ExperienceCard = () => {
 
   return (
     <div className='flex flex-col items-center min-h-[80vh] lg:px-40 w-full'>
-      <div className='pt-20'>
+      <div className='pt-16'>
       <motion.h1 className='text-4xl lg:text-5xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>
            My <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>Experiences</span>
       </motion.h1>
