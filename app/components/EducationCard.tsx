@@ -21,7 +21,7 @@ type DetailsProp = {
         <h3 className='capitalize font-bold text-xl md:text-2xl dark:text-light'>{props.degree}&nbsp;<a href={props.universityLink} target='_blank' className='text-purple-800 dark:text-purple-300 capitalize'>@{props.university}</a></h3>
         <span className='capitalize font-medium text-gray-700 mt-1  dark:text-light'> {props.time} | {props.address} </span>
         {props.description.split("\n").map((str) => (
-        <p className='font-medium w-full mt-1 text-sm md:text-base dark:text-light'>{str}</p>
+        <p key={props.degree} className='font-medium w-full mt-1 text-sm md:text-base dark:text-light'>{str}</p>
         ))}
 
       </motion.div>

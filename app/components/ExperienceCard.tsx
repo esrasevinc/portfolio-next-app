@@ -20,7 +20,7 @@ const Details = ( props : DetailsProp ) => {
       <h3 className='capitalize font-bold text-xl md:text-2xl dark:text-light'>{props.position}&nbsp;<a href={props.companyLink} target='_blank' className='text-purple-800 dark:text-purple-300 capitalize'>@{props.company}</a></h3>
       <span className='capitalize font-medium text-gray-700 dark:text-light mt-1'> {props.time} | {props.address} </span>
       {props.work.split("\n").map((str) => (
-        <p className='font-medium w-full mt-1 text-sm md:text-base dark:text-light'>{str}</p>
+        <p key={props.position} className='font-medium w-full mt-1 text-sm md:text-base dark:text-light'>{str}</p>
         ))}
     </motion.div>
   </li>
@@ -68,7 +68,7 @@ const ExperienceCard = () => {
             work= {'- Gained hands-on experience in full-stack development, honing skills in both front-end and back-end technologies.\n- Assisted in the design and implementation of database solutions, optimizing data storage and retrieval processes.\n- Collaborated with team members to troubleshoot and resolve issues, ensuring the smooth functioning of applications.'}
             />
             <Details 
-            position='Junior Software Engineer'
+            position='Junior Software Developer'
             company='Istinye University'
             companyLink='https://istinye.edu.tr/tr'
             time='March 2023 - June 2023'
