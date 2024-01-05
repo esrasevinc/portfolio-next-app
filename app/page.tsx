@@ -44,7 +44,7 @@ export default function Home() {
             </motion.p>
             <div className='flex items-center self-center md:self-start mt-2 mb-6 gap-6'>
               <Link 
-              href='/' 
+              href='https://www.linkedin.com/in/esra-sevin%C3%A7-36436b224/' 
               target={'_blank'}
               className='flex items-center mt-6 border bg-purple-950 text-light hover:bg-purple-800 hover:text-light dark:bg-light dark:text-purple-900 rounded-xl text-sm md:text-lg font-semibold py-1.5 px-3 md:py-3 md:px-6'
               >
@@ -53,7 +53,7 @@ export default function Home() {
               </Link>
               <Link 
               href='mailto:esrasevinc@hotmail.com' 
-              //target={'_blank'}
+              target={'_blank'}
               className='mt-6 bg-light text-purple-950 dark:bg-dark dark:text-light text-sm md:text-lg font-semibold ml-4 md:ml-6 underline underline-offset-4'
               >Contact Me</Link>
             </div>

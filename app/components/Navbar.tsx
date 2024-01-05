@@ -30,10 +30,10 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='w-full h-[10vh] z-20 my-3 font-medium text-lg flex items-center justify-around bg-gray-50 dark:bg-dark sticky top-0'>
+    <div className='w-full h-[10vh] z-30 font-medium text-lg flex items-center justify-around bg-gray-50 dark:bg-dark sticky top-0'>
         <Logo />
         <button className='justify-between items-center lg:hidden flex' onClick={handleOpenNav}>
-          {isOpen ? <MdCancel className='w-10 h-10 md:w-12 md:h-12 text-dark/80 dark:text-light' /> : <MdOutlineMenu className='w-10 h-10 md:w-12 md:h-12 text-dark/80 dark:text-light'/>}
+          {isOpen ? <MdCancel className='w-12 h-12 md:w-14 md:h-14 text-dark/80 dark:text-light' /> : <MdOutlineMenu className='w-10 h-10 md:w-12 md:h-12 text-dark/80 dark:text-light'/>}
         </button>
 
         <div className='hidden lg:flex items-center justify-between'>
@@ -58,7 +58,7 @@ const Navbar = () => {
     </div>
 
     {isOpen &&
-    <div className='z-30 absolute w-full min-h-screen bg-light dark:bg-dark items-center justify-center text-center text-2xl pt-32 font-medium'> 
+    <div className='z-20 fixed w-full h-screen bg-light dark:bg-dark items-center justify-center text-center text-xl sm:text-2xl pt-32 font-medium'> 
     <nav>
     <div>
     <ul className='flex flex-col'>
