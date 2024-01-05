@@ -34,7 +34,7 @@ export default function Home() {
               I'm a <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>software engineer.</span>
             </motion.h1>
             <motion.p className='text-sm md:text-lg text-start font-medium' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
-            I'm a passionate and dedicated 22-year-old junior software engineer with a relentless drive to create innovative and efficient solutions in the digital realm. I thrive in the dynamic world of full-stack development, where my skills span across both front-end and back-end technologies.
+            I&apos;m a passionate and dedicated 22-year-old junior software engineer with a relentless drive to create innovative and efficient solutions in the digital realm. I thrive in the dynamic world of full-stack development, where my skills span across both front-end and back-end technologies.
             <br />
             <br />
             From a young age, my fascination with technology ignited a curiosity that evolved into a deep-seated passion for software engineering. I am constantly seeking new challenges and opportunities to push the boundaries of what is possible in the digital landscape.
