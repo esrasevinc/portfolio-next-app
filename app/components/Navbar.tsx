@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='w-full z-10 h-[10vh] pt-3 pb-3 font-medium text-lg flex items-center justify-around bg-gray-50 dark:bg-dark relative'>
+    <div className='w-full h-[10vh] z-20 my-3 font-medium text-lg flex items-center justify-around bg-gray-50 dark:bg-dark sticky top-0'>
         <Logo />
         <button className='justify-between items-center lg:hidden flex' onClick={handleOpenNav}>
           {isOpen ? <MdCancel className='w-10 h-10 md:w-12 md:h-12 text-dark/80 dark:text-light' /> : <MdOutlineMenu className='w-10 h-10 md:w-12 md:h-12 text-dark/80 dark:text-light'/>}

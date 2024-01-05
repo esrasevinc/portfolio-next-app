@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
         <TransitionEffect />
-        <div className='flex flex-col lg:flex-row lg:justify-between items-center w-full lg:px-40 min-h-[80vh] px-12 xl:py-12 text-slate-900 dark:text-light mt-12'>
+        <div className='flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full lg:px-40 min-h-[80vh] px-12 xl:py-12 text-slate-900 dark:text-light mt-12'>
         <div className='lg:w-1/2 w-full '>
             <motion.h1 className='text-3xl md:text-4xl lg:text-6xl text-center font-bold items-center pb-2 lg:pb-4 pt-2' variants={quote} initial="initial" animate="animate">
               Hi there, I'm Esra! 
@@ -42,16 +42,18 @@ export default function Home() {
             <br />
             Thank you for stopping by!
             </motion.p>
-            <div className='flex items-center justify-center mt-2 mb-6'>
+            <div className='flex items-center self-center md:self-start mt-2 mb-6 gap-6'>
               <Link 
               href='/' 
               target={'_blank'}
               className='flex items-center mt-6 border bg-purple-950 text-light hover:bg-purple-800 hover:text-light dark:bg-light dark:text-purple-900 rounded-xl text-sm md:text-lg font-semibold py-1.5 px-3 md:py-3 md:px-6'
-              >Resume <BsBoxArrowUpRight className={'w-6 ml-1 font-extrabold'}/>
+              >
+              Resume
+               <BsBoxArrowUpRight className={'w-6 ml-1 font-extrabold'}/>
               </Link>
               <Link 
               href='mailto:esrasevinc@hotmail.com' 
-              target={'_blank'}
+              //target={'_blank'}
               className='mt-6 bg-light text-purple-950 dark:bg-dark dark:text-light text-sm md:text-lg font-semibold ml-4 md:ml-6 underline underline-offset-4'
               >Contact Me</Link>
             </div>

@@ -59,7 +59,7 @@ const ContactMe = () => {
 
   return (
     <div className='flex flex-col min-h-[80vh] lg:px-60 px-14 items-center w-full'>
-    <div className='pt-16 md:pt-20'>
+    <div className='pt-12 lg:pt-20'>
       <motion.h1 className='text-4xl md:text-5xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>
            Say <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>hello</span> to me!
       </motion.h1>
