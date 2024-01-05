@@ -87,7 +87,7 @@ const ContactMe = () => {
       {emailSubmitted 
       ? 
       (
-          <p className="text-green-600 font-semibold text-sm mt-2 ml-10">
+          <p className="text-green-600 font-semibold text-sm pt-12 text-center md:text-start md:mt-2 md:ml-10">
             Email sent successfully!
           </p>
         
