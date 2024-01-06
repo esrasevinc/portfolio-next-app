@@ -5,7 +5,7 @@ import { DeveloperIcon } from './DeveloperIcon'
 const HireMe = () => {
 
   return (
-    <div className='absolute z-10 md:fixed md:left-6 md:bottom-0 md:top-auto flex items-center  dark:text-light right-8 left-auto top-10 pt-12 bottom-auto '>
+    <div className='absolute flex items-center md:right-8 md:top-2 md:bottom-auto dark:text-light right-8 top-10 pt-12 bottom-auto '>
       <div className='lg:w-48 h-auto flex items-center justify-center relative w-28 md:w-30'>
        
        <DeveloperIcon 
