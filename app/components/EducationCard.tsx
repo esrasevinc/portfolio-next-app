@@ -1,4 +1,4 @@
-j'use client';
+'use client';
 
 import React from 'react'
 import educationPic from '../../public/images/education-pic.png'
