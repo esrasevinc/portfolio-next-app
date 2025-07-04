@@ -9,7 +9,7 @@ const HireMe = () => {
       <div className='lg:w-48 h-auto flex items-center justify-center relative w-28 md:w-30'>
        
        <DeveloperIcon 
-       className={`animate-spin-slow fill-dark dark:fill-light`}
+       className={`animate-spin-slow fill-neutral-600 dark:fill-light`}
        />
       
         <Link 

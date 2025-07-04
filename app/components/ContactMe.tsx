@@ -60,15 +60,15 @@ const ContactMe = () => {
   return (
     <div className='flex flex-col min-h-[80vh] lg:px-60 px-14 items-center w-full'>
     <div className='pt-12 lg:pt-20'>
-      <motion.h1 className='text-4xl md:text-5xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>
-           Say <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>hello</span> to me!
+      <motion.h1 className='text-4xl md:text-5xl text-center font-bold items-center dark:text-light text-neutral-800' variants={quote} initial='initial' animate='animate'>
+           Say <span className='bg-gradient-to-r from-pink-200 to-pink-400 text-transparent bg-clip-text'>hello</span> to me!
       </motion.h1>
       </div>
       <div className='flex flex-col md:flex-row md:justify-around w-full items-center justify-between'>
         <div className='md:w-1/2 w-full'>
             <div className='flex flex-col md:w-[80%]'>
-                <h5 className='text-lg md:text-2xl text-center md:text-start items-center font-bold text-gray-900 dark:text-light pt-6 md:pt-20'>Let's Connect!</h5>
-                <motion.p className='text-base md:text-lg font-medium text-gray-800 text-start dark:text-light pt-2' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
+                <h5 className='text-lg md:text-2xl text-center md:text-start items-center font-bold text-neutral-600 dark:text-light pt-6 md:pt-20'>Let's Connect!</h5>
+                <motion.p className='text-base md:text-lg font-medium text-neutral-600 text-start dark:text-light pt-2' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
                 As I embark on this exciting journey in the world of computer science, I invite you to explore my portfolio and witness firsthand the projects that reflect my commitment to excellence and creativity. Let&lsquo;s connect and explore how we can bring your ideas to life through the power of code.
                 </motion.p>
                 <div className='flex self-center md:self-start gap-8 pt-4'>
@@ -87,7 +87,7 @@ const ContactMe = () => {
       {emailSubmitted 
       ? 
       (
-          <p className="text-green-600 font-semibold text-sm pt-12 text-center md:text-start md:mt-2 md:ml-10">
+          <p className="text-green-800 font-semibold text-sm pt-12 text-center md:text-start md:mt-2 md:ml-14">
             Email sent successfully!
           </p>
         
@@ -95,7 +95,7 @@ const ContactMe = () => {
       (
         <form className='flex flex-col w-full md:pt-20 pt-14' onSubmit={handleSubmit}>
             <div className='mb-6 flex flex-col'>
-            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-sm md:text-base'>Your name</label>
+            <label htmlFor='email' className='text-neutral-800 dark:text-light font-medium text-sm md:text-base'>Your name</label>
             <input 
             type='text' 
             id='name' 
@@ -103,23 +103,23 @@ const ContactMe = () => {
             required
             placeholder='Jack'
             onChange={(e) => setName(e.target.value)}
-            className='bg-gray-50 border border-gray-500 px-2.5 py-1.5 rounded-lg'/>
+            className='bg-gray-50 border border-neutral-500 px-2.5 py-1.5 rounded-lg shadow-lg'/>
             </div>
 
             <div className='mb-6 flex flex-col'>
-            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-sm md:text-base'>Your e-mail</label>
+            <label htmlFor='email' className='text-neutral-800 dark:text-light font-medium text-sm md:text-base'>Your e-mail</label>
             <input 
             type='email' 
             id='email' 
             name='email'
             required
-            placeholder='abcdefgh@gmail.com'
+            placeholder='jack@gmail.com'
             onChange={(e) => setEmail(e.target.value)}
-            className='bg-gray-50 border border-gray-500 px-2.5 py-1.5 rounded-lg'/>
+            className='bg-gray-50 border border-neutral-500 px-2.5 py-1.5 rounded-lg shadow-lg'/>
             </div>
 
             <div className='mb-6 flex flex-col'>
-            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-sm md:text-base'>Subject</label>
+            <label htmlFor='email' className='text-neutral-800 dark:text-light font-medium text-sm md:text-base'>Subject</label>
             <input 
             type='text' 
             id='subject' 
@@ -127,11 +127,11 @@ const ContactMe = () => {
             required
             placeholder='Just saying hi!'
             onChange={(e) => setSubject(e.target.value)}
-            className='bg-gray-50 border border-gray-500 px-2.5 py-1.5 my-1.5 rounded-lg'/>
+            className='bg-gray-50 border border-neutral-500 px-2.5 py-1.5 my-1.5 rounded-lg shadow-lg'/>
             </div>
 
             <div className='mb-6 flex flex-col'>
-            <label htmlFor='email' className='text-gray-900 dark:text-light font-medium text-sm md:text-base'>Message</label>
+            <label htmlFor='email' className='text-neutral-800 dark:text-light font-medium text-sm md:text-base'>Message</label>
             <textarea 
             id='message' 
             name='message'
@@ -139,12 +139,12 @@ const ContactMe = () => {
             rows={5}
             placeholder="Let's talk about..."
             onChange={(e) => setMessage(e.target.value)}
-            className='bg-gray-50 border border-gray-500 px-2.5 py-1.5 my-1.5 rounded-lg'/>
+            className='bg-gray-50 border border-neutral-500 px-2.5 py-1.5 my-1.5 rounded-lg shadow-lg'/>
             </div>
 
             <button 
             type='submit'
-            className='bg-purple-950 hover:bg-purple-800 dark:bg-light dark:text-purple-900 dark:hover:text-light text-light font-medium text-sm md:text-lg border rounded-lg py-2.5 px-5 w-full mb-6 shadow-md'
+            className='bg-pink-300 hover:bg-pink-400 transition-all duration-300 dark:bg-light  dark:text-purple-900 dark:hover:text-light text-light font-medium text-sm md:text-lg border rounded-lg py-2.5 px-5 w-full mb-6 shadow-lg'
             >Send Message</button>
 
         </form> 

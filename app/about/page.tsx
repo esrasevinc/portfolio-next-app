@@ -40,8 +40,8 @@ const About = () => {
     <TransitionEffect />
     <div className='flex flex-col items-center min-h-[80vh] justify-between lg:px-40 px-12 w-full'>
       <div className='pt-12 md:pt-20'>
-      <motion.h1 className='text-4xl md:text-5xl lg:text-6xl text-center font-bold items-center dark:text-light pb-2 lg:pb-4' variants={quote} initial='initial' animate='animate'>
-              So, who <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text'>am i? </span>
+      <motion.h1 className='text-4xl md:text-5xl lg:text-6xl text-center font-bold items-center dark:text-light pb-2 lg:pb-4 text-neutral-800' variants={quote} initial='initial' animate='animate'>
+              So, who <span className='bg-gradient-to-r from-pink-200 to-pink-400 text-transparent bg-clip-text'>am i? </span>
       </motion.h1>
       
       
@@ -67,7 +67,7 @@ const About = () => {
       </div>
 
       <div className='flex flex-col items-center mt-28'>
-        <span className='bg-gradient-to-r from-purple-300 to-purple-950 text-transparent bg-clip-text text-3xl md:text-4xl lg:text-6xl text-center font-bold '>Skills and Technologies</span>
+        <span className='bg-gradient-to-r from-pink-200 to-pink-400 text-transparent bg-clip-text text-3xl md:text-4xl lg:text-6xl text-center font-bold '>Skills and Technologies</span>
         <div className='grid grid-cols-2 md:grid-cols-6 gap-10 w-full pt-8'>
             <Skills 
             icon={<FaReact className='w-14 h-14 md:w-16 md:h-16 dark:text-light' />}
@@ -122,13 +122,13 @@ const About = () => {
       </div>
 
       <div className='flex flex-col mt-16 items-center text-center'>
-        <p className='text-lg md:text-lg font-medium mt-12 text-dark dark:text-light'>Do you want to transform your ideas into digital <span className='text-purple-800 dark:text-purple-300'>reality?</span></p>
-        <p className='text-lg md:text-lg font-medium text-dark dark:text-light'>I am here to help!</p>
+        <p className='text-lg md:text-lg font-medium mt-12 text-neutral-600 dark:text-light'>Do you want to transform your ideas into digital <span className='text-pink-400 dark:text-pink-300'>reality?</span></p>
+        <p className='text-lg md:text-lg font-medium text-neutral-600 dark:text-light'>I am here to help!</p>
 
         <Link 
               href='mailto:esrasevinc@hotmail.com' 
               target={'_blank'}
-              className='items-center px-3 py-1 md:px-6 md:py-2 mt-3 bg-purple-950 text-light dark:bg-light dark:hover:text-light dark:text-purple-900 hover:bg-purple-800 hover:text-light rounded-xl text-base md:text-lg font-semibold border'
+              className='items-center px-3 py-1 md:px-6 md:py-2 mt-3 bg-gradient-to-r from-pink-200 to-pink-400 hover:scale-105 transition-all duration-300 text-light dark:bg-light dark:hover:text-light dark:text-pink-300  hover:text-light rounded-xl text-base md:text-lg font-semibold border'
               >
                 Contact Me
         </Link>
