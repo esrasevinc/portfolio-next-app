@@ -15,12 +15,12 @@ type DetailsProp = {
 }
 
 const Details = ( props : DetailsProp ) => {
-  return <li className='flex flex-col first:mt-0 last:mb-0 w-[75%] items-start justify-between py-8'>
+  return <li className='flex flex-col first:mt-0 last:mb-0 items-start justify-between py-4 md:py-8'>
     <motion.div className='mt-1' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
       <h3 className='capitalize font-bold text-xl md:text-2xl dark:text-light text-neutral-800'>{props.position}&nbsp;<a href={props.companyLink} target='_blank' className='text-pink-300 capitalize hover:text-pink-400 transition-all duration-300'>@{props.company}</a></h3>
-      <span className='capitalize font-medium text-neutral-700 dark:text-light mt-1'> {props.time} | {props.address} </span>
+      <span className='capitalize font-medium text-pink-500 dark:text-pink-200 mt-1 text-sm md:text-base'> {props.time} | {props.address} </span>
       {props.work.split("\n").map((str) => (
-        <p key={props.position} className='font-medium w-full mt-1 text-sm md:text-base dark:text-light text-neutral-500'>{str}</p>
+        <p key={props.position} className='font-medium w-full mt-1 text-sm md:text-base dark:text-light text-neutral-500 text-justify leading-relaxed"'>{str}</p>
         ))}
     </motion.div>
   </li>
@@ -42,11 +42,14 @@ const ExperienceCard = () => {
 
 
   return (
-    <div className='flex flex-col items-center min-h-[80vh] lg:px-40 w-full'>
-      <div className='pt-12 lg:pt-20'>
+    <div className='flex flex-col items-center min-h-[80vh] px-6 md:px-16 lg:px-28 w-full'>
+      <div className='pt-8 lg:pt-16'>
       <motion.h1 className='text-4xl lg:text-5xl text-center font-bold items-center dark:text-light' variants={quote} initial='initial' animate='animate'>
            My <span className='bg-gradient-to-r from-pink-200 to-pink-400 text-transparent bg-clip-text'>Experiences</span>
       </motion.h1>
+      <p className='mt-4 text-center text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto text-sm md:text-base'>
+        Discover the hands-on experiences that have helped me grow as a developer. From collaborative projects to real-world problem-solving, each role has contributed to who I am today.
+      </p>
       </div>
       <div className='flex flex-col lg:flex-row items-center lg:justify-center lg:w-full'>
 
@@ -57,7 +60,7 @@ const ExperienceCard = () => {
         className='w-full h-auto'/>
       </div>
 
-      <div className='pt-6 lg:pt-12 lg:w-1/2 w-full'>
+      <div className='lg:w-1/2 w-full'>
           <ul className='w-full flex flex-col items-center justify-between pb-6 lg:pb-12'>
             <Details 
             position='Junior Software Engineer'

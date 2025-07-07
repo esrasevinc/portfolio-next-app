@@ -107,7 +107,7 @@ const Navbar = () => {
         <div className="px-8 pb-6">
           <button onClick={handleSwitchMode} className='rounded-full'>
             {mode === 'dark'
-              ? <MdOutlineLightMode className='w-8 h-8 text-white' />
+              ? <MdOutlineLightMode className='w-8 h-8 text-light' />
               : <MdDarkMode className='w-8 h-8 text-neutral-800' />}
           </button>
         </div>

@@ -16,12 +16,12 @@ type DetailsProp = {
   }
 
   const Details = ( props : DetailsProp ) => {
-    return <li className='flex flex-col w-[75%] items-center justify-between py-12 text-start'>
+    return <li className='flex flex-col items-center justify-between py-6 md:py-12 text-start'>
       <motion.div className='mt-1' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
         <h3 className='capitalize font-bold text-xl md:text-2xl dark:text-light text-neutral-800'>{props.degree}&nbsp;<a href={props.universityLink} target='_blank' className='text-pink-300 hover:text-pink-400 transition-all duration-300 capitalize'>@{props.university}</a></h3>
-        <span className='capitalize font-medium text-gray-700 mt-1  dark:text-light'> {props.time} | {props.address} </span>
+        <span className='capitalize font-medium text-pink-500 dark:text-pink-200 mt-1 text-sm md:text-base'> {props.time} | {props.address} </span>
         {props.description.split("\n").map((str) => (
-        <p key={props.degree} className='font-medium w-full mt-1 text-sm md:text-base dark:text-light text-neutral-500'>{str}</p>
+        <p key={props.degree} className='font-medium w-full mt-1 text-sm md:text-base dark:text-light text-neutral-500 text-justify leading-relaxed"'>{str}</p>
         ))}
 
       </motion.div>
@@ -44,19 +44,23 @@ const EducationCard = () => {
 
 
   return (
-    <div className='flex flex-col items-center min-h-[80vh] lg:px-40 w-full'>
-      <div className='pt-12 lg:pt-20'>
+    <div className='flex flex-col items-center min-h-[80vh] px-6 md:px-16 lg:px-28 w-full'>
+      <div className='pt-8 md:pt-16'>
       <motion.h1 className='text-4xl lg:text-5xl text-center font-bold items-center' variants={quote} initial='initial' animate='animate'>
            <span className='bg-gradient-to-r from-pink-200 to-pink-400 text-transparent bg-clip-text'>Education</span>
       </motion.h1>
+      <p className='mt-4 text-center text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto text-sm md:text-base'>
+      Here's a look at my academic journey — the foundations that shaped my skills and passion for software development. Each step reflects curiosity, dedication, and a love for learning.
+      </p>
       </div>
-      <div className='flex flex-col lg:flex-row items-center lg:justify-center lg:w-full mt-6'>
+      <div className='flex flex-col lg:flex-row items-center justify-center w-full mt-6'>
       <div className='lg:w-1/2'>
         <Image 
         src={educationPic}
         alt='Education Pic'
         className='w-full h-auto'/>
       </div>
+      <div className='lg:w-1/2'>
 
 
             <Details 
@@ -67,6 +71,7 @@ const EducationCard = () => {
             address='Istanbul, Turkey'
             description= {'✨ Graduated as high honor student with 3.66 GPA and the 1st rank within over 80 students.\n✨ Relevant courses included Advanced Programming, Data Structures and Algorithms, Visual Programming, Database Systems, Object Oriented Programming, Data Analysis, Mobile Application Design and Development, Machine Learning and Deep Learning etc.\n✨ Thesis Subject: Face Mask Detection Using Vision Transformers.'}
             />
+            </div>
 
       </div>
     </div>

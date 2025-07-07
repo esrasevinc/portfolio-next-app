@@ -4,32 +4,34 @@ import Link from 'next/link';
 
 interface ProjectCardProps {
   title: string;
-  image: string; 
+  image: string;
   description: string;
-  link?: string; 
+  link?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, image, description, link }) => {
   return (
-    <div className="bg-white dark:bg-dark rounded-2xl shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-2xl duration-300 flex flex-col">
-      <div className="relative w-full h-48 md:h-56">
+    <div className="group bg-white/90 dark:bg-black/40 dark:backdrop-blur-md border border-neutral-200 dark:border-neutral-700 rounded-3xl shadow-xl overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 relative">
+      <div className="relative w-full h-48 md:h-72 overflow-hidden">
         <Image
           src={image}
           alt={title}
           fill
-          style={{ objectFit: 'cover' }}
-          className="w-full h-full"
-          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105 brightness-75"
+          quality={90}
+          priority={false}
         />
+        {/* Overlay on hover */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
       </div>
-      <div className="p-5 flex flex-col flex-1">
-        <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-light">{title}</h3>
-        <p className="text-gray-700 dark:text-gray-300 mb-4 flex-1">{description}</p>
+      <div className="flex-1 flex flex-col p-3 md:p-6 gap-1 md:gap-3">
+        <h3 className="text-lg md:text-xl font-extrabold text-neutral-700 dark:text-white mb-1 leading-tight">{title}</h3>
+        <p className="text-neutral-600 dark:text-neutral-200 text-sm md:text-base flex-1">{description}</p>
         {link && (
           <Link
             href={link}
             target="_blank"
-            className="inline-block mt-auto px-4 py-2 bg-purple-700 text-light rounded-lg font-semibold hover:bg-purple-900 transition-colors duration-200 text-center"
+            className="mt-2 inline-block px-5 py-2 rounded-xl bg-pink-400 text-white font-semibold shadow hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-offset-2 transition-all duration-200 text-center"
           >
             View Project
           </Link>
