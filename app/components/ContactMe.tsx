@@ -67,7 +67,7 @@ const ContactMe = () => {
       <div className='flex flex-col md:flex-row md:justify-around w-full items-center justify-between'>
         <div className='md:w-1/2 w-full'>
             <div className='flex flex-col md:w-[80%]'>
-                <h5 className='text-lg md:text-2xl text-center md:text-start items-center font-bold text-neutral-600 dark:text-light pt-6 md:pt-20'>Let's Connect!</h5>
+                <h5 className='text-lg md:text-3xl text-center md:text-start items-center font-bold text-neutral-600 dark:text-pink-300 pt-6 md:pt-20'>Let's Connect!</h5>
                 <motion.p className='text-base md:text-lg font-medium text-neutral-600 text-start dark:text-light pt-2' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
                 As I embark on this exciting journey in the world of computer science, I invite you to explore my portfolio and witness firsthand the projects that reflect my commitment to excellence and creativity. Let&lsquo;s connect and explore how we can bring your ideas to life through the power of code.
                 </motion.p>
@@ -144,7 +144,7 @@ const ContactMe = () => {
 
             <button 
             type='submit'
-            className='bg-pink-300 hover:bg-pink-400 transition-all duration-300 dark:bg-light  dark:text-purple-900 dark:hover:text-light text-light font-medium text-sm md:text-lg border rounded-lg py-2.5 px-5 w-full mb-6 shadow-lg'
+            className='bg-pink-300 hover:bg-pink-400 transition-all duration-300 dark:bg-pink-100 dark:text-pink-400 dark:hover:bg-pink-200  dark:hover:text-pink-500 text-light font-medium text-sm md:text-lg border rounded-lg py-2.5 px-5 w-full mb-6 shadow-lg'
             >Send Message</button>
 
         </form> 

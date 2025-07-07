@@ -9,17 +9,15 @@ import TransitionEffect from '../components/TransitionEffect';
 import AboutMeCard from '../components/AboutMeCard';
 import Skills from '../components/Skills';
 import { FaReact } from "react-icons/fa";
-import { SiDotnet } from "react-icons/si";
+import { SiDotnet, SiPostgresql, SiPostman } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { SiPython } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
-import { SiCsharp } from "react-icons/si";
 import { SiMicrosoftsqlserver } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
-import { SiScikitlearn } from "react-icons/si";
 
 const About = () => {
 
@@ -102,8 +100,8 @@ const About = () => {
             title='Tailwind CSS'
             />
             <Skills 
-            icon={<SiCsharp className='w-14 h-14 md:w-16 md:h-16 dark:text-light' />}
-            title='C#'
+            icon={<SiPostman className='w-14 h-14 md:w-16 md:h-16 dark:text-light' />}
+            title='Postman'
             />
             <Skills 
             icon={<SiMicrosoftsqlserver className='w-14 h-14 md:w-16 md:h-16 dark:text-light'/>}
@@ -114,8 +112,8 @@ const About = () => {
             title='React Native'
             />
             <Skills 
-            icon={<SiScikitlearn className='w-14 h-14 md:w-16 md:h-16 dark:text-light'/>}
-            title='Machine Learning'
+            icon={<SiPostgresql className='w-14 h-14 md:w-16 md:h-16 dark:text-light'/>}
+            title='PostgreSQL'
             />
 
         </div>
@@ -128,7 +126,7 @@ const About = () => {
         <Link 
               href='mailto:esrasevinc@hotmail.com' 
               target={'_blank'}
-              className='items-center px-3 py-1 md:px-6 md:py-2 mt-3 bg-gradient-to-r from-pink-200 to-pink-400 hover:scale-105 transition-all duration-300 text-light dark:bg-light dark:hover:text-light dark:text-pink-300  hover:text-light rounded-xl text-base md:text-lg font-semibold border'
+              className='items-center px-3 py-1 md:px-6 md:py-2 mt-3 dark:bg-pink-100 dark:text-pink-400 dark:hover:bg-pink-200  dark:hover:text-pink-500 bg-pink-300 hover:scale-105 transition-all duration-300 text-light hover:text-light rounded-xl text-base md:text-lg font-semibold border'
               >
                 Contact Me
         </Link>

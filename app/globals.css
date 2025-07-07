@@ -3,15 +3,18 @@
 @tailwind utilities;
 
 body {
-  background-image: url('/images/colors.jpg');
+  background-image: url('/images/background3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 }
 
-body.dark {
-  background-image: none;
-  background-color: #181818; 
+html.dark body {
+  background-image: linear-gradient(to bottom, #3a2b30, #5e3a4d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
