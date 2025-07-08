@@ -57,7 +57,7 @@ const ProjectsPage = () => {
         Here you can find a selection of my favorite projects, each crafted with care and a passion for building great digital experiences. Click on any project to learn more!
       </p>
       </div>
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pb-6 lg:pb-12">
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 pb-6 lg:pb-12">
         {projects.map((project, idx) => (
           <ProjectCard key={idx} {...project} />
         ))}
