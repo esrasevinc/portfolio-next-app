@@ -63,7 +63,7 @@ const ExperienceCard = () => {
       <div className='lg:w-1/2 w-full'>
           <ul className='w-full flex flex-col items-center justify-between pb-6 lg:pb-12'>
             <Details 
-            position='Junior Software Engineer'
+            position='Software Engineer'
             company='Beylikduzu Municipality'
             companyLink='https://www.beylikduzu.istanbul/'
             time='September 2023 - Present'

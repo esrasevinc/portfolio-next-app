@@ -29,7 +29,7 @@ export default function Home() {
         <TransitionEffect />
         <div className='flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full min-h-[80vh] px-6 md:px-16 lg:px-28 xl:py-12 text-neutral-600 dark:text-light mt-12'>
         <div className='lg:w-1/2 w-full '>
-            <motion.h1 className='text-2xl md:text-4xl lg:text-6xl text-center font-bold items-center pb-2 lg:pb-4 pt-2 text-neutral-800 dark:text-light' variants={quote} initial="initial" animate="animate">
+            <motion.h1 className='text-xl md:text-2xl lg:text-6xl text-center font-bold items-center pb-2 lg:pb-4 pt-2 text-neutral-800 dark:text-light' variants={quote} initial="initial" animate="animate">
               Hi, I'm Esra 💗
               <br />
               I'm a <span className='bg-gradient-to-r from-pink-200 to-pink-400 text-transparent bg-clip-text'>

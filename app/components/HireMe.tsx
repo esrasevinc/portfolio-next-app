@@ -15,8 +15,8 @@ const HireMe = () => {
         <Link 
           href='mailto:esrasevinc@hotmail.com' 
           target={'_blank'}
-          className='flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-neutral-700 dark:bg-light dark:text-dark text-light border-2 border-solid
-          dark:border-light shadow-lg md:w-18 md:h-18 lg:w-20 lg:h-20 w-14 h-14 md:text-base lg:text-lg text-xs text-center rounded-full font-semibold hover:bg-light hover:text-dark dark:hover:bg-dark/75 dark:hover:text-light hover:border-slate-600'
+          className='flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-neutral-700 border-neutral-700 dark:bg-light dark:text-neutral-700 text-light border-2 border-solid
+          dark:border-light shadow-lg md:w-18 md:h-18 lg:w-20 lg:h-20 w-14 h-14 md:text-base lg:text-lg text-xs text-center rounded-full font-semibold hover:bg-light hover:text-neutral-600 dark:hover:bg-dark/75 dark:hover:text-light '
           >Hire Me</Link>
       
       </div>
