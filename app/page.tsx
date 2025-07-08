@@ -9,6 +9,7 @@ import HireMe from './components/HireMe'
 import { motion } from 'framer-motion'
 import TransitionEffect from './components/TransitionEffect';
 import { Typewriter } from 'react-simple-typewriter';
+import GitHubCalendar from 'react-github-calendar';
 
 export default function Home() {
 
@@ -27,7 +28,7 @@ export default function Home() {
   return (
     <>
         <TransitionEffect />
-        <div className='flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full min-h-[80vh] px-6 md:px-16 lg:px-28 xl:py-12 text-neutral-600 dark:text-light mt-12'>
+        <div className='flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full min-h-[80vh] px-6 md:px-16 lg:px-28 text-neutral-600 dark:text-light mt-12'>
         <div className='lg:w-1/2 w-full '>
             <motion.h1 className='text-xl md:text-2xl lg:text-6xl text-center font-bold items-center pb-2 lg:pb-4 pt-2 text-neutral-800 dark:text-light' variants={quote} initial="initial" animate="animate">
               Hi, I'm Esra 💗
@@ -73,8 +74,26 @@ export default function Home() {
         <div className='lg:w-1/2 mt-2 w-[75%] order-first lg:order-last items-center justify-between'>
             <Image src={profilePic} alt='Profile Picture' className='w-full h-auto'/>
         </div>
+        
         </div>
         <HireMe />
+
+        <div className="w-full flex flex-col items-center justify-center mb-12 px-4 text-neutral-600 dark:text-light">
+        <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-neutral-400 to-neutral-800 text-transparent bg-clip-text dark:text-light mb-4">
+          Days I Code
+        </h2>
+        <GitHubCalendar
+          username="esrasevinc"
+          blockSize={16}
+          blockMargin={5}
+          fontSize={16}
+          colorScheme="light"
+          theme={{
+            light: ['#fce7f3', '#f9a8d4', '#f472b6', '#ec4899', '#be185d'],
+            dark: ['#4c1d95', '#7e22ce', '#db2777', '#f472b6', '#fce7f3'],
+          }}
+        />
+      </div>
     </>
   )
 }
