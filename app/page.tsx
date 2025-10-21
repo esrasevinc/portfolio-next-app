@@ -43,7 +43,7 @@ export default function Home() {
           /></span>
             </motion.h1>
             <motion.p className='text-sm md:text-lg text-justify leading-relaxed' initial={{y:50}} whileInView={{y:0}} transition={{duration:1.5, type:'spring'}}>
-            Hi, I&apos;m a 24-year-old software engineer who loves turning ideas into elegant, functional digital experiences.
+            Hi, I&apos;m a 25-year-old software engineer who loves turning ideas into elegant, functional digital experiences.
             <br />
             <br />
             I specialize in full-stack development — building smooth, responsive interfaces on the front end and robust systems on the back end.
