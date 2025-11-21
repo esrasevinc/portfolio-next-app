@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/icon.png" type="image/png" sizes="32x32" />
-      </head>
+      </head> 
       <body className={`${poppins.className} font-sans w-full relative`}>
         <Script id='theme-switcher' strategy='beforeInteractive'>
           {`

@@ -71,7 +71,7 @@ const ExperienceCard = () => {
             work= {'✨ Gained hands-on experience in full-stack development, honing skills in both front-end and back-end technologies.\n✨ Assisted in the design and implementation of database solutions, optimizing data storage and retrieval processes.\n✨ Collaborated with team members to troubleshoot and resolve issues, ensuring the smooth functioning of applications.'}
             />
             <Details 
-            position='Junior Software Developer'
+            position='Jr. Software Developer'
             company='Istinye University'
             companyLink='https://istinye.edu.tr/tr'
             time='March 2023 - June 2023'
@@ -90,7 +90,7 @@ const ExperienceCard = () => {
             position='Software Engineer Intern'
             company='MLPCARE'
             companyLink='https://www.mlpcare.com/'
-            time='February 2022 - June 2022'
+            time='February 2022 - July 2022'
             address='Istanbul, Turkey'
             work= {'✨ Worked closely with the backend development team to design, implement, and maintain .NET-based applications supporting healthcare operations.\n✨ Collaborated with senior developers to enhance the scalability and responsiveness of existing MVC applications, improving overall system efficiency.\n✨ Assisted in database design and management tasks, ensuring the secure and efficient storage of healthcare data.'}
             />
