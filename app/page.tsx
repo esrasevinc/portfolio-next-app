@@ -71,8 +71,14 @@ export default function Home() {
               
             </div>
         </div>
-        <div className='lg:w-1/2 mt-2 w-[75%] order-first lg:order-last items-center justify-between'>
-            <Image src={profilePic} alt='Profile Picture' className='w-full h-auto'/>
+        <div className='relative lg:w-1/2 mt-2 w-[75%] h-[350px] lg:h-[600px] order-first lg:order-last items-center justify-between'>
+            <Image 
+            src={profilePic} 
+            alt='Profile Picture' 
+            fill
+            priority
+            quality={100}
+            className='object-contain'/>
         </div>
         
         </div>
